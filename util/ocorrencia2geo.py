@@ -28,7 +28,7 @@ def processa_ocorrencias(params):
   geocoder.set_proxy(proxy)
 
   # ssh tunneled: ssh eltermann@143.106.60.97 -L 54321:localhost:5432
-  conn = psycopg2.connect("dbname='spview' user='postgres' host='localhost' port='54321' password='Zem5aEpEH6dB5aF'");
+  conn = psycopg2.connect("dbname='spview' user='postgres' host='localhost' port='5432' password='Zem5aEpEH6dB5aF'");
   cur = conn.cursor()
 
   cur.execute("""SELECT ocorrencia, local, altura FROM ocorrencia WHERE ocorrencia >= %s AND ocorrencia <= %s""", (cod_from, cod_to))
