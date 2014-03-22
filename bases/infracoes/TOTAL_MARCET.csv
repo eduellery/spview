@@ -1,0 +1,714 @@
+Codigo;MarcaCET
+0001;NÞO INFORMADA       
+0019;VOLKSWAGEN          
+0027;FORD                
+0035;GM                  
+0043;DODGE               
+0051;FIAT                
+0060;MERCEDES BENZ       
+0078;ALFA ROMEO          
+0086;FNM                 
+0094;MOTOC.MARCA N.IDENT.
+0108;CHRYSLER            
+0116;SIMCA               
+0124;SCANIA VABIS        
+0132;PUMA                
+0141;OPEL                
+0159;OLDSMOBILE          
+0167;BMW                 
+0175;TOYOTA              
+0183;INTERNATIONAL       
+0191;PORSCHE             
+0205;MERCURY             
+0213;RENAULT             
+0221;GMC                 
+0230;VOLVO               
+0248;BUICK               
+0256;PONTIAC             
+0264;PLYMOUTH            
+0272;JAGUAR              
+0281;SKODA               
+0299;CITROEN             
+0302;MORRIS              
+0311;MAGIRUS DEUTZ       
+0329;PEUGEOT             
+0337;BORGWARD            
+0345;GURGEL              
+0353;FARGO               
+0361;CADILLAC            
+0370;STUDEBAKER          
+0388;ROVER               
+0396;DE SOTO             
+0400;MACK                
+0418;FORD SAF            
+0426;TRIUMPH             
+0434;WHITE               
+0442;AUSTIN              
+0451;NASH                
+0469;VAUXHALL            
+0477;KAYSER              
+0485;SUNBEAN             
+0493;MG                  
+0507;LANCIA              
+0515;SINGER              
+0523;WOLSELEY            
+0531;BUSSING             
+0540;MATHIS              
+0558;HILLMAN             
+0566;COMMER              
+0574;NSU                 
+0582;FERRARI             
+0591;FORDSON             
+0604;TAUNUS              
+0612;VANGUARD            
+0621;BOND                
+0639;HUMBER              
+0647;GOLIATH             
+0655;PACKARD             
+0663;HUDSON              
+0671;LEYLAND             
+0680;MASERATI            
+0698;SAUER               
+0701;ACLO                
+0710;BENTLEY             
+0728;AMPHICAR            
+0736;ABARTH              
+0744;FRAZER              
+0752;LINCOLN             
+0761;DYSON               
+0779;BEDFORD             
+0787;REO                 
+0795;HOTCHKISS           
+0809;STAR                
+0817;BRISTOL             
+0825;FEDERAL             
+0833;FWD                 
+0841;HOLDEM              
+0850;AERO MINOR          
+0868;ALLARD              
+0876;BERLIET             
+0884;DIAMOND             
+0892;HENRY JUNIOR        
+0906;ROMI ISETA          
+0914;LORENA              
+0922;WARZAWA             
+0931;LA REINE            
+0949;FLEXIBILE           
+0957;DELAHAYE            
+0965;KENWORTH            
+0973;NISSAN              
+0981;RILEY               
+0990;SIATA DIANA         
+1007;INVICTA             
+1015;MORGAN              
+1023;RHEIN               
+1031;VANDERER            
+1040;AUTOCAR             
+1058;DYNA PANHARD        
+1066;GUTBROD             
+1074;HANSA               
+1082;HENSCHEL            
+1091;PEGASSO             
+1104;SCAMMELL            
+1112;TAUBOT              
+1121;TEMPO               
+1139;THORNY CROFT        
+1147;CROSLEY             
+1155;DAIMLER             
+1163;HRG                 
+1171;ISOTA               
+1180;JOWET               
+1198;ROGERS              
+1201;ROLLS ROYCE         
+1210;SALSON              
+1228;TEYOPET             
+1236;THAMES              
+1244;UNIVERSAL           
+1252;HONDA               
+1261;SUZUKI              
+1279;AMERICAN MOTOR      
+1287;ARMSTRONG           
+1295;AUDI                
+1309;AVALLONE            
+1317;ASTON MARTIN        
+1325;BIANCO              
+1333;BRASINCA            
+1341;FAUN                
+1350;GRAHAN              
+1368;BUGGY               
+1376;LAMBORGHINI         
+1384;LANCHESTER          
+1392;LAUTOMOBILE         
+1406;MINI PANTHER        
+1414;OSCAR SPORT         
+1422;SAAB                
+1431;SALZGITTER          
+1449;STEYR               
+1457;TRATOR              
+1465;TATRA               
+1473;TWIN COACH          
+1481;ZIM                 
+1490;DKW                 
+1503;BUGATTI             
+1511;CUMMINS             
+1520;LOTUS               
+1538;LAFER               
+1546;ADAMO               
+1554;BUCYRUS ERIE        
+1562;CATERPILLAR         
+1571;EUCLID              
+1589;KOEHRING            
+1597;WILLYS              
+1601;MALZONI             
+1619;MIURA               
+1627;MONZA               
+1635;SM 4.1              
+1643;DACUNHA J.JEG       
+1651;MITSUBISHI          
+1660;BSA                 
+1678;INVEL               
+1686;REBOQUE             
+1694;COYOTE              
+1708;SUBARU              
+1716;HAUPAK              
+1724;TEREX               
+1732;DARDO               
+1741;AMC PACER           
+1759;ENVEMO              
+1767;SQUALO              
+1775;TRAILER             
+1783;VENTURA             
+1791;FERA                
+1805;GAZELLE             
+1813;CONCORDE            
+1821;CAPRIOLET           
+1830;VW/EMIS             
+1848;VW/FARUS            
+1856;VICTORIA            
+1864;VILLA               
+1872;FORMIGAO            
+1881;AGRALE              
+1899;GUCCI               
+1902;DATSUM              
+1911;SWING               
+1929;FURGLAINE           
+1937;DASHER              
+1945;VW/TERRAL           
+1953;SKORPIUS            
+1961;BRM                 
+1970;PAG NICK            
+1988;VW/TOY              
+1996;BAJA-BUGGY          
+2003;PRETTY              
+2011;ENGESA              
+2020;MIDGET              
+2038;HYSTER              
+2046;ANGRA               
+2054;YAMAHA              
+2062;VESPA               
+2071;IMP/BELAIR          
+2089;IMP/DUCATI          
+2097;IMP/JEEP            
+2101;IMP/LAND ROWER      
+2119;IMP/PREFECT         
+2127;MON/CORBIT          
+2135;MON/FURCARE         
+2143;MON/GIANT'S         
+2151;MON/GRAZIELA        
+2160;MON/JORNADA         
+2178;MON/LEONETTE        
+2186;MON/POWER GLASS     
+2194;MON/PROTOTIPO       
+2208;MON/TANDER-CAR      
+2216;VW/GLASPAC          
+2224;VW/KADRON           
+2232;VW/TARPAN           
+2241;VW/DACON            
+2259;MON/MGK BUGGY       
+2267;MON/VELOSOLEX       
+2275;VW/BUGRE            
+2283;VW/BABY BUGGY       
+2291;VW/JEEP LAIO        
+2305;VW/BABY             
+2313;VW/DUNNAS           
+2321;VW/SELVAGEM         
+2330;VW/HOBBY            
+2348;VW/TANGER           
+2356;VW/XODO             
+2364;VW/PRAYANO          
+2372;VW/BIRD             
+2381;VW/PHANTON          
+2399;VW/BRAVO            
+2402;RAGGE/RAGGE         
+2411;FVE/SAVAGE          
+2429;CBT/CBT             
+2437;FYBER/FYBER         
+2445;ALDEE/ALDEE         
+2453;BABY/BABY LAIO      
+2461;LADA                
+2470;MAFERSA             
+2488;HYUNDAI             
+2496;MAZDA               
+2500;JAVALI              
+2518;PHOENIX             
+2526;FUTURA              
+2534;GEO                 
+2542;CHAMONIX            
+2551;SATURN              
+2569;ISUZU               
+2577;VW/GUACU            
+2585;KIA                 
+2593;SINGER              
+2607;CBT/191             
+2615;ICOMDA              
+2623;GRETA/GAMO          
+2631;HOFSTETTER/1.6      
+2640;ICOMDA/BRASI IV     
+2658;BANTAM              
+2666;EAGLE               
+2674;ACURA               
+2682;ANGLIA              
+2691;ANPHIFAR AN         
+2704;AUBURN              
+2712;AUTO UNION          
+2721;BRUMANA PUG         
+2739;DAIHATSU            
+2747;DE TOMASO           
+2755;DURANT              
+2763;ERLAN               
+2771;FAIRLANE            
+2780;FRANKLIN            
+2798;GIGULI              
+2801;GRAF STIFT          
+2810;HISPANO             
+2828;HOFFMAN             
+2836;HORNET              
+2844;HUPMOBILE           
+2852;IVECO               
+2861;MADALINCO           
+2879;GRANCAR             
+2887;FERCAR              
+2895;FLEXIBLE            
+2909;SANYOU              
+2917;XINLING             
+2925;DAYUN               
+2933;TANK                
+2941;CIXI ASIAMOTOS      
+2950;WANGYE              
+2968;CSR                 
+2976;VMAG                
+2984;LDV                 
+2992;MACK                
+3000;ADAX                
+3018;AURORA/BERL122C     
+3026;A1/TRILHA           
+3034;BM/FOSTER           
+3042;BRASFIBRA/HAPPY     
+3051;BUZIO               
+3069;CARRAH/MUSARI       
+3077;ENFIELD             
+3085;LMS                 
+3093;DAYANG              
+3107;HRD                 
+3115;SUNBEAM             
+3123;HER CHEE            
+3131;ADLY                
+3140;JINCHENG            
+3158;BELDE               
+3166;CARRERA             
+3174;MALAGUTI            
+3182;FOSTI               
+3191;BAJAJ               
+3204;NANFANG             
+3212;SIMSON              
+3221;GEMSY               
+3239;SINTEC              
+3247;ATALA               
+3255;EMME                
+3263;PAMPERA             
+3271;MAX MOTORS          
+3280;QIANJIANG           
+3298;SIAMOTO             
+3301;GANGTIAN            
+3310;GAS GAS             
+3328;BYCRISTO            
+3336;DOUGLAS             
+3344;CHANG JIANG         
+3352;TRIWAY              
+3361;MVK                 
+3379;LIFAN               
+3387;SUNDOWN             
+3395;DAFRA               
+3409;XGJAO               
+3417;LONCIN              
+3425;ZONGSHEN            
+3433;MOTTUS              
+3441;BUELL               
+3450;LEOPARD             
+3468;MULLER              
+3476;ZHONGYU             
+3484;VENTO               
+3492;SHINERAY            
+3506;CBP/EJ1             
+3514;CHEDA               
+3522;EDRA/RANCHO         
+3531;EGO/CUMBUCO L       
+3549;EMISUL/BB           
+3557;ENSEADA/MG I        
+3565;FIBRA/F1            
+3573;FN/CIG ANO KL       
+3581;KAMAZ 4310          
+3590;MATRA               
+3603;ASIA                
+3611;RDK/RENEGADE        
+3620;ITAPEMIRIM/SBVM     
+3638;ITAPOA/ITAPOA       
+3646;JV/JOTAVE I         
+3654;HB/BRIO FX          
+3662;DAEWOO              
+3671;MVE/REGATA          
+3689;MORO                
+3697;SEAT                
+3701;UTILITY             
+3719;DACLAND             
+3727;PIONER              
+3735;IFA                 
+3743;BELT                
+3751;L A.CRAFT/DINO      
+3760;L A.CRAFT/SABRE     
+3778;MON/TANDER PHOR     
+3786;MON/RAMELO          
+3794;MON/TURINO          
+3808;MON/S.HOUSE         
+3816;VLM/VLM             
+3824;SPORT REIN          
+3832;ZIG                 
+3841;LASSALE             
+3859;QUASAR RUNNER       
+3867;MON/DACRIS          
+3875;MARAJA              
+3883;MARINAS             
+3891;ITAL                
+3905;GADNER              
+3913;JOBBY               
+3921;MAGNATA             
+3930;UAZ                 
+3948;MIRANTE             
+3956;GAMO                
+3964;TAMBABA             
+3972;JPX                 
+3981;SABRE               
+3999;HANOMAG             
+4006;EGO                 
+4014;COBRASMA            
+4022;MON/CWA             
+4031;SSANGYONG           
+4049;NISSIN              
+4057;GUIAUTO MIAMI       
+4065;FSO ROBUSTA         
+4073;POWERTRONICS        
+4081;MON/BRIGAO          
+4090;GEVISA              
+4103;COMIL               
+4111;NAVISTAR            
+4120;MARCOPOLO           
+4138;TROLER              
+4146;TECNOBUS            
+4154;OLIVEIRA            
+4162;MCC                 
+4171;DIMEX COMIL SVELTO  
+4189;VAZQUEZ             
+4197;PINHEIRO/F. PROPRIA 
+4201;CICARELLI/F.PROPRIA 
+4219;BUSSCAR             
+4227;CROSS LANDER        
+4235;POMELLI/F. PROPRIA  
+4243;NAPOLITANO/F.PROPRIA
+4251;AMGC HUMMER         
+4260;JENSEN              
+4278;WEIMANN/F. PROPRIA  
+4286;SC/SALTINHO         
+4294;TRABANT             
+4308;AVIC                
+4316;FOCAS/F.PROPRIA     
+4324;NOGUEIRA/F.PROPRIA  
+4332;AMERICAR            
+4341;SMART               
+4359;SSFIBERGLASS        
+4367;INDABRA             
+4375;AMAZON              
+4383;AMARANTE/F.PROPRIA  
+4391;SOCRATTE/F.PROPRIA  
+4405;LOBINI              
+4413;PEIXOTO             
+4421;MULTIEIXO           
+4430;ESSEX               
+4448;SOARES/F.PROPRIA    
+4456;WALK                
+4464;OAKLAND             
+4472;WOLNEY/F.PROPRIA    
+4481;VADERS/F.PROPRIA    
+4499;NEWTRACK            
+4502;ANTONIO CARLOS      
+4511;FRANCHIM/F.PROPRIA  
+4529;GAMMA COBRA         
+4537;FARIAS/F.PROPRIA    
+4545;M.PIANELLI/F.PROPRIA
+4553;CCC INGERS          
+4561;VP                  
+4570;D.ZOPPI/F.PROPRIA   
+4588;MGA                 
+4596;CHANGAN             
+4600;BRAMONT             
+4618;HAFEI               
+4626;HEBEI ZHONG         
+4634;JIMBEI              
+4642;J.ZANCANER/F.PROPRIA
+4651;ASA/CAUYPE          
+4669;MONIKA              
+4677;ALPINA              
+4685;ROMPAL              
+4693;PETERSON            
+4707;TGB                 
+4715;TMZ                 
+4723;SUNDIRO             
+4731;KASINSKI            
+4740;CALOI               
+4758;DAELIM              
+4766;FBM                 
+4774;IBRAMOTO            
+4782;AJS                 
+4791;BENELLI             
+4804;BSA                 
+4812;CAGIVA              
+4821;CZ                  
+4839;H.DAVIDSON          
+4847;BETA                
+4855;GILERA              
+4863;INDIAN              
+4871;ISO                 
+4880;JAWA                
+4898;KAWASAKI            
+4901;KTM                 
+4910;HUSABERG            
+4928;MATCHLESS           
+4936;MONTESA             
+4944;MGUZZI              
+4952;MZ                  
+4961;NORTON              
+4979;NSU                 
+4987;PIAGGIO             
+4995;VELOCETTE           
+5002;ZANELLA             
+5011;ZUNDAPP             
+5029;MONARK              
+5037;MOTOVI              
+5045;MOTALLI             
+5053;MOTOCONFORT         
+5061;SANYANG             
+5070;CONDOR              
+5088;HOREX               
+5096;BRANDY              
+5100;JAP                 
+5118;LAVRALE             
+5126;COFAVE              
+5134;BENZHOU             
+5142;HGL                 
+5151;SEIMM               
+5169;BMC                 
+5177;AGUSTA              
+5185;MEDVID              
+5193;MONDIAL             
+5207;MONTESA             
+5215;SPARTA              
+5223;YINXIANG            
+5231;PUCH                
+5240;TECPAMA             
+5258;BIMOTA              
+5266;HERCHEE             
+5274;GEMINI              
+5282;APRILIA             
+5291;HERO                
+5304;WEMOTO              
+5312;CMB                 
+5321;JIALING             
+5339;TRAXX               
+5347;QINGQI              
+5355;TIANJING            
+5363;PGO                 
+5371;ROYAL               
+5380;MINSK               
+5398;STANDARD            
+5401;HARTFORD            
+5410;HUSQVARNA           
+5428;MV AGUSTA           
+5436;JIANSHE             
+5444;DERBI               
+5452;HYOSUNG             
+5461;WUYANG              
+5479;LUOJIA              
+5487;JIANGSU             
+5495;JMSTAR              
+5509;KIN MOTORS          
+5517;CHITUMA             
+5525;CTM GREEN           
+5533;KAHENA              
+5541;TIANHENG            
+5550;FYM                 
+5568;ADVENTURE           
+5576;YINGANG             
+5584;JONWAY              
+5592;LIFENG MVK          
+5606;BASHAN              
+5614;HAOBAO              
+5622;ZHEJIANG            
+5631;LINGYUN             
+5649;BRP                 
+5657;XINGYUE             
+5665;GARINNI             
+5673;BAOTIAN             
+5681;AME/AMAZONAS        
+5690;URAL                
+5703;ITALJET             
+5711;ARIEL               
+5720;TORNAX              
+5738;RIGUET              
+5746;AME/CHOPPER         
+5754;LAMBRETTA           
+5762;REVA                
+5771;YINHE               
+5789;SEAGRAVE            
+5797;CARVER              
+5801;DI BLASI            
+5819;TUTTO               
+5827;DONGYANG            
+5835;STUTZ               
+5843;AUTO CROSS/F.PROPRIA
+5851;HIGHWAY             
+5860;CORD                
+5878;CHERY               
+5886;ALVIS               
+5894;MOTOR-CASA          
+5908;TAC                 
+5916;WAKE                
+5924;ZHONGNENG           
+5932;KOAYENG             
+5941;ALEX                
+5959;FREIGHTLINER        
+5967;GRAHAM-PAIGE        
+5975;LANDUN              
+5983;MAHINDRA            
+5991;SKYGO               
+6009;GREAT WALL          
+6017;SINOTRUK            
+6025;PAGANI              
+6033;SUKIDA              
+6041;SPYKER              
+6050;ARO                 
+6068;LM                  
+6076;AMARAL/F.PROPRIA    
+6084;EDRA                
+6092;MARTUSCELLI         
+6106;SONIK               
+6114;INDUSCAR            
+6122;KANDI               
+6131;W.H KIBLINGER       
+6149;GLOBALSTRONG        
+6157;PIERCE ARROW        
+6165;TRAMONTINI          
+6173;JOHNNY PAG          
+6181;AVA/KYMCO           
+6190;DHCLBC              
+6203;THINK               
+6211;HUAWIN              
+6220;HONLING             
+6238;VINCENT HRD         
+6246;PIONEIRA            
+6254;HAOJIN              
+6262;LIYANG              
+6271;JAC MOTORS          
+6289;P.FERREIRA/F.PROPRIA
+6297;HERMES.L/F.PROPRIA  
+6301;DINA.SOUZA/F.PROPRIA
+6319;FRANCIOSI/F.PROPRIA 
+6327;MINI                
+6335;DELOREAN            
+6343;PETERBILT           
+6351;A.AILTIS/F.PROPRIA  
+6360;HONGXING            
+6378;V.PIMENTEL/F.PROPRIA
+6386;A.MAGRIN/F.PROPRIA  
+6394;HUSABERG            
+6408;FELZA               
+6416;LINZHI              
+6424;JINBAWANG           
+6432;EXCALIBUR           
+6441;HUANSONG            
+6459;CFMOTO              
+6467;BIGA                
+6475;MENGDELI            
+6483;FOTON AUMARK        
+6491;FAW                 
+6505;ZERO                
+6513;GOMES.R/ F.PROPRIA  
+6521;MADASS              
+6530;SHAANXI             
+6548;BULL                
+6556;EISENACH            
+6564;HUANGHAI            
+6572;MAN                 
+6581;WANHU               
+6599;GEELY               
+6602;GENERIC             
+6611;ARDIE               
+6629;SACHS               
+6637;MOTOCAR             
+6645;BRILLIANCE          
+6653;LML                 
+6661;ATMAN               
+6670;CARBODIES           
+6688;SINSKI              
+6696;XIASHING            
+6700;ZHONGXING           
+6718;WIESMANN            
+6726;VICTORY             
+6734;FLASH               
+6742;PANYU               
+6751;HUARI               
+6769;FLC.MALUF/F.PROPRIA 
+6777;ILY.PERUAYTE/F.PROPR
+6785;NIPPONIA            
+6793;CASADOTRICICLO      
+6807;LMF                 
+6815;MTL                 
+6823;M.MELO/F.PROPRIA    
+6831;HAORIZI             
+6840;GUOJI               
+6858;HAOJIAN             
+6866;NORDEX              
+6874;JINLING             
+6882;JIAPENG             
+6891;MCLAREN             
+6904;J.ARRAES/F.PROPRIA  
+6912;HONGYAN             
+6921;CHARMING            
+6939;BYD                 
+6947;TOKUJI/F.PROPRIA    
+6955;PAULO VAZ/F.PROPRIA 
+6963;R.DAHER/F.PROPRIA TR
+6971;BRAVAX              
+6980;E-MAX               
+6998;KEEWAY              
+7005;FISKER              
+7013;AND.EDER/F.PROPRIA  
+7021;RELY                
+7030;MAGRAO              
+7048;HAIMA               
+7056;VYRUS               
+7064;APARECIDO/F.PROPRIA 
+7072;JCN.PANAO/F.PROPRIA 
+7081;TAYO                
+7099;DAF                 
+7102;DFM                 
+7111;A.QUEIROZ/F.PROPRIA 
+9997;OUTRAS MARCAS       

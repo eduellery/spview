@@ -1,0 +1,647 @@
+Codigo;Municipio
+00790;ARCO IRIS                     
+00792;BREJO ALEGRE                  
+00794;CANAS                         
+00796;FERNAO                        
+00798;GAVIAO PEIXOTO                
+00800;IPIGUA                        
+00802;JUMIRIM                       
+00804;NANTES                        
+00806;NOVA CASTILHO                 
+00808;OUROESTE                      
+00810;PAULISTANIA                   
+00812;PRACINHA                      
+00814;PRATANIA                      
+00816;QUADRA                        
+00818;RIBEIRAO DOS INDIOS           
+00820;SANTA CRUZ DA ESPERANCA       
+00822;SANTA SALETE                  
+00824;TAQUARAL                      
+00826;TRABIJU                       
+00828;VITORIA BRASIL                
+02937;LOURDES                       
+02939;SANTO ANTONIO ARACANGUA       
+02941;SAO JOAO DE IRACEMA           
+02943;ILHA SOLTEIRA                 
+02945;SUZANAPOLIS                   
+02947;CANITAR                       
+02949;ENGENHEIRO COELHO             
+02951;HORTOLANDIA                   
+02953;HOLAMBRA                      
+02955;TUIUTI                        
+02957;VARGEM                        
+02959;ESTIVA GERBI                  
+02961;EMILIANOPOLIS                 
+02963;PEDRINHAS PAULISTA            
+02965;BERTIOGA                      
+02967;CAJATI                        
+02969;ILHA COMPRIDA                 
+02971;UBARANA                       
+02973;ZACARIAS                      
+02975;ELISARIO                      
+02977;MARAPOAMA                     
+02979;NOVAIS                        
+02981;ASPASIA                       
+02983;MESOPOLIS                     
+02985;NOVA CANAA PAULISTA           
+02987;PONTALINDA                    
+02989;PARISI                        
+02991;ARAPEI                        
+02993;POTIM                         
+02995;ALAMBARI                      
+02997;BARRA DO CHAPEU               
+02999;CAMPINA DO MONTE ALEGRE       
+03053;ITAOCA                        
+03055;ITAPIRAPUA PAULISTA           
+03057;RIBEIRAO GRANDE               
+03059;BOM SUCESSO DO ITARARE        
+03061;NOVA CAMPINA                  
+03063;TAQUARIVAI                    
+03065;ALUMINIO                      
+03067;ARACARIGUAMA                  
+03227;TORRE DE PEDRA                
+05445;SALTINHO                      
+05447;SAO LOURENCO DA SERRA         
+06101;ADAMANTINA                    
+06103;ADOLFO                        
+06105;AGUAI                         
+06107;AGUAS DA PRATA                
+06109;AGUAS DE LINDOIA              
+06111;AGUAS DE SAO PEDRO            
+06113;AGUDOS                        
+06115;ALFREDO MARCONDES             
+06117;ALTAIR                        
+06119;ALTINOPOLIS                   
+06121;ALTO ALEGRE                   
+06123;ALVARES FLORENCE              
+06125;ALVARES MACHADO               
+06127;ALVARO DE CARVALHO            
+06129;ALVINLANDIA                   
+06131;AMERICANA                     
+06133;AMERICO BRASILIENSE           
+06135;AMERICO DE CAMPOS             
+06137;AMPARO                        
+06139;ANALANDIA                     
+06141;ANDRADINA                     
+06143;ANGATUBA                      
+06145;ANHEMBI                       
+06147;ANHUMAS                       
+06149;APARECIDA                     
+06151;APARECIDA D'OESTE             
+06153;APIAI                         
+06155;ARACATUBA                     
+06157;ARACOIABA DA SERRA            
+06159;ARAMINA                       
+06161;ARANDU                        
+06163;ARARAQUARA                    
+06165;ARARAS                        
+06167;AREALVA                       
+06169;AREIAS                        
+06171;AREIOPOLIS                    
+06173;ARIRANHA                      
+06175;ARTUR NOGUEIRA                
+06177;ARUJA                         
+06179;ASSIS                         
+06181;ATIBAIA                       
+06183;AURIFLAMA                     
+06185;AVAI                          
+06187;AVANHANDAVA                   
+06189;AVARE                         
+06191;BADY BASSITT                  
+06193;BALBINOS                      
+06195;BALSAMO                       
+06197;BANANAL                       
+06199;BARBOSA                       
+06201;BARAO DE ANTONINA             
+06203;BARIRI                        
+06205;BARRA BONITA                  
+06207;BARRA DO TURVO                
+06209;BARRETOS                      
+06211;BARRINHA                      
+06213;BARUERI                       
+06215;BASTOS                        
+06217;BATATAIS                      
+06219;BAURU                         
+06221;BEBEDOURO                     
+06223;BENTO DE ABREU                
+06225;BERNARDINO DE CAMPOS          
+06227;BILAC                         
+06229;BIRIGUI                       
+06231;BIRITIBA-MIRIM                
+06233;BOA ESPERANCA DO SUL          
+06235;BOCAINA                       
+06237;BOFETE                        
+06239;BOITUVA                       
+06241;BOM JESUS DOS PERDOES         
+06243;BORA                          
+06245;BORACEIA                      
+06247;BORBOREMA                     
+06249;BOTUCATU                      
+06251;BRAGANCA PAULISTA             
+06255;BRAUNA                        
+06257;BRODOWSKI                     
+06259;BROTAS                        
+06261;BURI                          
+06263;BURITAMA                      
+06265;BURITIZAL                     
+06267;CABRALIA PAULISTA             
+06269;CABREUVA                      
+06271;CACAPAVA                      
+06273;CACHOEIRA PAULISTA            
+06275;CACONDE                       
+06277;CAFELANDIA                    
+06279;CAIABU                        
+06281;CAIEIRAS                      
+06283;CAIUA                         
+06285;CAJAMAR                       
+06287;CAJOBI                        
+06289;CAJURU                        
+06291;CAMPINAS                      
+06293;CAMPO LIMPO PAULISTA          
+06295;CAMPOS DO JORDAO              
+06297;CAMPOS NOVOS PAULISTA         
+06299;CANANEIA                      
+06301;CANDIDO MOTA                  
+06303;CANDIDO RODRIGUES             
+06305;CAPAO BONITO                  
+06307;CAPELA DO ALTO                
+06309;CAPIVARI                      
+06311;CARAGUATATUBA                 
+06313;CARAPICUIBA                   
+06315;CARDOSO                       
+06317;CASA BRANCA                   
+06319;CASSIA DOS COQUEIROS          
+06321;CASTILHO                      
+06323;CATANDUVA                     
+06325;CATIGUA                       
+06327;CEDRAL                        
+06329;CERQUEIRA CESAR               
+06331;CERQUILHO                     
+06333;CESARIO LANGE                 
+06335;CHARQUEADA                    
+06337;CHAVANTES                     
+06339;CLEMENTINA                    
+06341;COLINA                        
+06343;COLOMBIA                      
+06345;CONCHAL                       
+06347;CONCHAS                       
+06349;CORDEIROPOLIS                 
+06351;COROADOS                      
+06353;CORONEL MACEDO                
+06355;CORUMBATAI                    
+06357;COSMOPOLIS                    
+06359;COSMORAMA                     
+06361;COTIA                         
+06363;CRAVINHOS                     
+06365;CRISTAIS PAULISTA             
+06367;CRUZALIA                      
+06369;CRUZEIRO                      
+06371;CUBATAO                       
+06373;CUNHA                         
+06375;DESCALVADO                    
+06377;DIADEMA                       
+06379;DIVINOLANDIA                  
+06381;DOBRADA                       
+06383;DOIS CORREGOS                 
+06385;DOLCINOPOLIS                  
+06387;DOURADO                       
+06389;DRACENA                       
+06391;DUARTINA                      
+06393;DUMONT                        
+06395;ECHAPORA                      
+06397;ELDORADO                      
+06399;ELIAS FAUSTO                  
+06401;EMBU DAS ARTES                
+06403;EMBU-GUACU                    
+06405;ESTRELA D OESTE               
+06407;ESTRELA DO NORTE              
+06409;FARTURA                       
+06411;FERNANDOPOLIS                 
+06413;FERNANDO PRESTES              
+06415;FERRAZ DE VASCONCELOS         
+06417;FLORA RICA                    
+06419;FLOREAL                       
+06421;FLORIDA PAULISTA              
+06423;FLORINEA                      
+06425;FRANCA                        
+06427;FRANCISCO MORATO              
+06429;FRANCO DA ROCHA               
+06431;GABRIEL MONTEIRO              
+06433;GALIA                         
+06435;GARCA                         
+06437;GASTAO VIDIGAL                
+06439;GENERAL SALGADO               
+06441;GETULINA                      
+06443;GLICERIO                      
+06445;GUAICARA                      
+06447;GUAIMBE                       
+06449;GUAIRA                        
+06451;GUAPIACU                      
+06453;GUAPIARA                      
+06455;GUARA                         
+06457;GUARACAI                      
+06459;GUARACI                       
+06461;GUARANI D'OESTE               
+06463;GUARANTA                      
+06465;GUARARAPES                    
+06467;GUARAREMA                     
+06469;GUARATINGUETA                 
+06471;GUAREI                        
+06473;GUARIBA                       
+06475;GUARUJA                       
+06477;GUARULHOS                     
+06479;GUZOLANDIA                    
+06481;HERCULANDIA                   
+06483;IACANGA                       
+06485;IACRI                         
+06487;IBATE                         
+06489;IBIRA                         
+06491;IBIRAREMA                     
+06493;IBITINGA                      
+06495;IBIUNA                        
+06497;ICEM                          
+06499;IEPE                          
+06501;IGARACU DO TIETE              
+06503;IGARAPAVA                     
+06505;IGARATA                       
+06507;IGUAPE                        
+06509;ILHABELA                      
+06511;INDAIATUBA                    
+06513;INDIANA                       
+06515;INDIAPORA                     
+06517;INUBIA PAULISTA               
+06519;IPAUCU                        
+06521;IPERO                         
+06523;IPEUNA                        
+06525;IPORANGA                      
+06527;IPUA                          
+06529;IRACEMAPOLIS                  
+06531;IRAPUA                        
+06533;IRAPURU                       
+06535;ITABERA                       
+06537;ITAI                          
+06539;ITAJOBI                       
+06541;ITAJU                         
+06543;ITANHAEM                      
+06545;ITAPECERICA DA SERRA          
+06547;ITAPETININGA                  
+06549;ITAPEVA                       
+06551;ITAPEVI                       
+06553;ITAPIRA                       
+06555;ITAPOLIS                      
+06557;ITAPORANGA                    
+06559;ITAPUI                        
+06561;ITAPURA                       
+06563;ITAQUAQUECETUBA               
+06565;ITARARE                       
+06567;ITARIRI                       
+06569;ITATIBA                       
+06571;ITATINGA                      
+06573;ITIRAPINA                     
+06575;ITIRAPUA                      
+06577;ITOBI                         
+06579;ITU                           
+06581;ITUPEVA                       
+06583;ITUVERAVA                     
+06585;JABORANDI                     
+06587;JABOTICABAL                   
+06589;JACAREI                       
+06591;JACI                          
+06593;JACUPIRANGA                   
+06595;JAGUARIUNA                    
+06597;JALES                         
+06599;JAMBEIRO                      
+06601;JANDIRA                       
+06603;JARDINOPOLIS                  
+06605;JARINU                        
+06607;JAU                           
+06609;JERIQUARA                     
+06611;JOANOPOLIS                    
+06613;JOAO RAMALHO                  
+06615;JOSE BONIFACIO                
+06617;JULIO MESQUITA                
+06619;JUNDIAI                       
+06621;JUNQUEIROPOLIS                
+06623;JUQUIA                        
+06625;JUQUITIBA                     
+06627;LAGOINHA                      
+06629;LARANJAL PAULISTA             
+06631;LAVINIA                       
+06633;LAVRINHAS                     
+06635;LEME                          
+06637;LENCOIS PAULISTA              
+06639;LIMEIRA                       
+06641;LINDOIA                       
+06643;LINS                          
+06645;LORENA                        
+06647;LOUVEIRA                      
+06649;LUCELIA                       
+06651;LUCIANOPOLIS                  
+06653;LUIS ANTONIO                  
+06655;LUISIANIA                     
+06657;LUPERCIO                      
+06659;LUTECIA                       
+06661;MACATUBA                      
+06663;MACAUBAL                      
+06665;MACEDONIA                     
+06667;MAGDA                         
+06669;MAIRINQUE                     
+06671;MAIRIPORA                     
+06673;MANDURI                       
+06675;MARABA PAULISTA               
+06677;MARACAI                       
+06679;MARIAPOLIS                    
+06681;MARILIA                       
+06683;MARINOPOLIS                   
+06685;MARTINOPOLIS                  
+06687;MATAO                         
+06689;MAUA                          
+06691;MENDONCA                      
+06693;MERIDIANO                     
+06695;MIGUELOPOLIS                  
+06697;MINEIROS DO TIETE             
+06699;MIRACATU                      
+06701;MIRA ESTRELA                  
+06703;MIRANDOPOLIS                  
+06705;MIRANTE DO PARANAPANEMA       
+06707;MIRASSOL                      
+06709;MIRASSOLANDIA                 
+06711;MOCOCA                        
+06713;MOGI DAS CRUZES               
+06715;MOGI-GUACU                    
+06717;MOGI-MIRIM                    
+06719;MOMBUCA                       
+06721;MONCOES                       
+06723;MONGAGUA                      
+06725;MONTE ALEGRE DO SUL           
+06727;MONTE ALTO                    
+06729;MONTE APRAZIVEL               
+06731;MONTE AZUL PAULISTA           
+06733;MONTE CASTELO                 
+06735;MONTEIRO LOBATO               
+06737;MONTE MOR                     
+06739;MORRO AGUDO                   
+06741;MORUNGABA                     
+06743;MURUTINGA DO SUL              
+06745;NARANDIBA                     
+06747;NATIVIDADE DA SERRA           
+06749;NAZARE PAULISTA               
+06751;NEVES PAULISTA                
+06753;NHANDEARA                     
+06755;NIPOA                         
+06757;NOVA ALIANCA                  
+06759;NOVA EUROPA                   
+06761;NOVA GRANADA                  
+06763;NOVA GUATAPORANGA             
+06765;NOVA INDEPENDENCIA            
+06767;NOVA LUZITANIA                
+06769;NOVA ODESSA                   
+06771;NOVO HORIZONTE                
+06773;NUPORANGA                     
+06775;OCAUCU                        
+06777;OLEO                          
+06779;OLIMPIA                       
+06781;ONDA VERDE                    
+06783;ORIENTE                       
+06785;ORINDIUVA                     
+06787;ORLANDIA                      
+06789;OSASCO                        
+06791;OSCAR BRESSANE                
+06793;OSVALDO CRUZ                  
+06795;OURINHOS                      
+06797;OURO VERDE                    
+06799;PACAEMBU                      
+06801;PALESTINA                     
+06803;PALMARES PAULISTA             
+06805;PALMEIRA D OESTE              
+06807;PALMITAL                      
+06809;PANORAMA                      
+06811;PARAGUACU PAULISTA            
+06813;PARAIBUNA                     
+06815;PARAISO                       
+06817;PARANAPANEMA                  
+06819;PARANAPUA                     
+06821;PARAPUA                       
+06823;PARDINHO                      
+06825;PARIQUERA-ACU                 
+06827;PATROCINIO PAULISTA           
+06829;PAULICEIA                     
+06831;PAULINIA                      
+06833;PAULO DE FARIA                
+06835;PEDERNEIRAS                   
+06837;PEDRA BELA                    
+06839;PEDRANOPOLIS                  
+06841;PEDREGULHO                    
+06843;PEDREIRA                      
+06845;PEDRO DE TOLEDO               
+06847;PENAPOLIS                     
+06849;PEREIRA BARRETO               
+06851;PEREIRAS                      
+06853;PERUIBE                       
+06855;PIACATU                       
+06857;PIEDADE                       
+06859;PILAR DO SUL                  
+06861;PINDAMONHANGABA               
+06863;PINDORAMA                     
+06865;ESPIRITO SANTO DO PINHAL      
+06867;PINHALZINHO                   
+06869;PIQUEROBI                     
+06871;PIQUETE                       
+06873;PIRACAIA                      
+06875;PIRACICABA                    
+06877;PIRAJU                        
+06879;PIRAJUI                       
+06881;PIRANGI                       
+06883;PIRAPORA DO BOM JESUS         
+06885;PIRAPOZINHO                   
+06887;PIRASSUNUNGA                  
+06889;PIRATININGA                   
+06891;PITANGUEIRAS                  
+06893;PLANALTO                      
+06895;PLATINA                       
+06897;POA                           
+06899;POLONI                        
+06901;POMPEIA                       
+06903;PONGAI                        
+06905;PONTAL                        
+06907;PONTES GESTAL                 
+06909;POPULINA                      
+06911;PORANGABA                     
+06913;PORTO FELIZ                   
+06915;PORTO FERREIRA                
+06917;POTIRENDABA                   
+06919;PRADOPOLIS                    
+06921;PRAIA GRANDE                  
+06923;PRESIDENTE ALVES              
+06925;PRESIDENTE BERNARDES          
+06927;PRESIDENTE EPITACIO           
+06929;PRESIDENTE PRUDENTE           
+06931;PRESIDENTE WENCESLAU          
+06933;PROMISSAO                     
+06935;QUATA                         
+06937;QUEIROZ                       
+06939;QUELUZ                        
+06941;QUINTANA                      
+06943;RAFARD                        
+06945;RANCHARIA                     
+06947;REDENCAO DA SERRA             
+06949;REGENTE FEIJO                 
+06951;REGINOPOLIS                   
+06953;REGISTRO                      
+06955;RESTINGA                      
+06957;RIBEIRA                       
+06959;RIBEIRAO BONITO               
+06961;RIBEIRAO BRANCO               
+06963;RIBEIRAO CORRENTE             
+06965;RIBEIRAO DO SUL               
+06967;RIBEIRAO PIRES                
+06969;RIBEIRAO PRETO                
+06971;RIVERSUL                      
+06973;RIFAINA                       
+06975;RINCAO                        
+06977;RINOPOLIS                     
+06979;RIO CLARO                     
+06981;RIO DAS PEDRAS                
+06983;RIO GRANDE DA SERRA           
+06985;RIOLANDIA                     
+06987;ROSEIRA                       
+06989;RUBIACEA                      
+06991;RUBINEIA                      
+06993;SABINO                        
+06995;SAGRES                        
+06997;SALES                         
+06999;SALES OLIVEIRA                
+07001;SALESOPOLIS                   
+07003;SALMORAO                      
+07005;SALTO                         
+07007;SALTO DE PIRAPORA             
+07009;SALTO GRANDE                  
+07011;SANDOVALINA                   
+07013;SANTA ADELIA                  
+07015;SANTA ALBERTINA               
+07017;SANTA BARBARA DO OESTE        
+07019;AGUAS DE SANTA BARBARA        
+07021;SANTA BRANCA                  
+07023;SANTA CLARA D OESTE           
+07025;SANTA CRUZ DA CONCEICAO       
+07027;SANTA CRUZ DAS PALMEIRAS      
+07029;SANTA CRUZ DO RIO PARDO       
+07031;SANTA ERNESTINA               
+07033;SANTA FE DO SUL               
+07035;SANTA GERTRUDES               
+07037;SANTA ISABEL                  
+07039;SANTA LUCIA                   
+07041;SANTA MARIA DA SERRA          
+07043;SANTA MERCEDES                
+07045;SANTANA DA PONTE PENSA        
+07047;SANTANA DE PARNAIBA           
+07049;SANTA RITA D OESTE            
+07051;SANTA RITA DO PASSA QUATRO    
+07053;SANTA ROSA DE VITERBO         
+07055;SANTO ANASTACIO               
+07057;SANTO ANDRE                   
+07059;SANTO ANTONIO DA ALEGRIA      
+07061;SANTO ANTONIO DE POSSE        
+07063;SANTO ANTONIO DO JARDIM       
+07065;SANTO ANTONIO DO PINHAL       
+07067;SANTO EXPEDITO                
+07069;SANTOPOLIS DO AGUAPEI         
+07071;SANTOS                        
+07073;SAO BENTO DO SAPUCAI          
+07075;SAO BERNARDO DO CAMPO         
+07077;SAO CAETANO DO SUL            
+07079;SAO CARLOS                    
+07081;SAO FRANCISCO                 
+07083;SAO JOAO DA BOA VISTA         
+07085;SAO JOAO DAS DUAS PONTES      
+07087;SAO JOAO DO PAU D ALHO        
+07089;SAO JOAQUIM DA BARRA          
+07091;SAO JOSE DA BELA VISTA        
+07093;SAO JOSE DO BARREIRO          
+07095;SAO JOSE DO RIO PARDO         
+07097;SAO JOSE DO RIO PRETO         
+07099;SAO JOSE DOS CAMPOS           
+07101;SAO LUIS DO PARAITINGA        
+07103;SAO MANUEL                    
+07105;SAO MIGUEL ARCANJO            
+07107;SAO PAULO                     
+07109;SAO PEDRO                     
+07111;SAO PEDRO DO TURVO            
+07113;SAO ROQUE                     
+07115;SAO SEBASTIAO                 
+07117;SAO SEBASTIAO DA GRAMA        
+07119;SAO SIMAO                     
+07121;SAO VICENTE                   
+07123;SARAPUI                       
+07125;SARUTAIA                      
+07127;SEBASTIANOPOLIS DO SUL        
+07129;SERRA AZUL                    
+07131;SERRANA                       
+07133;SERRA NEGRA                   
+07135;SERTAOZINHO                   
+07137;SETE BARRAS                   
+07139;SEVERINIA                     
+07141;SILVEIRAS                     
+07143;SOCORRO                       
+07145;SOROCABA                      
+07147;SUD MENNUCCI                  
+07149;SUMARE                        
+07151;SUZANO                        
+07153;TABAPUA                       
+07155;TABATINGA                     
+07157;TABOAO DA SERRA               
+07159;TACIBA                        
+07161;TAGUAI                        
+07163;TAIACU                        
+07165;TAIUVA                        
+07167;TAMBAU                        
+07169;TANABI                        
+07171;TAPIRAI                       
+07173;TAPIRATIBA                    
+07175;TAQUARITINGA                  
+07177;TAQUARITUBA                   
+07179;TARABAI                       
+07181;TATUI                         
+07183;TAUBATE                       
+07185;TEJUPA                        
+07187;TEODORO SAMPAIO               
+07189;TERRA ROXA                    
+07191;TIETE                         
+07193;TIMBURI                       
+07195;TORRINHA                      
+07197;TREMEMBE                      
+07199;TRES FRONTEIRAS               
+07201;TUPA                          
+07203;TUPI PAULISTA                 
+07205;TURIUBA                       
+07207;TURMALINA                     
+07209;UBATUBA                       
+07211;UBIRAJARA                     
+07213;UCHOA                         
+07215;UNIAO PAULISTA                
+07217;URANIA                        
+07219;URU                           
+07221;URUPES                        
+07223;VALENTIM GENTIL               
+07225;VALINHOS                      
+07227;VALPARAISO                    
+07231;VARGEM GRANDE DO SUL          
+07233;VARZEA PAULISTA               
+07235;VERA CRUZ                     
+07237;VINHEDO                       
+07239;VIRADOURO                     
+07241;VISTA ALEGRE DO ALTO          
+07243;VOTORANTIM                    
+07245;VOTUPORANGA                   
+07247;BOREBI                        
+07249;DIRCE REIS                    
+07251;EMBAUBA                       
+07253;ESPIRITO SANTO DO TURVO       
+07255;EUCLIDES DA CUNHA PAULISTA    
+07257;GUATAPARA                     
+07259;IARAS                         
+07261;IBITIUVA                      
+07263;MOTUCA                        
+07265;ROSANA                        
+07267;TARUMA                        
+07273;VARGEM GRANDE PAULISTA        

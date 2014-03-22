@@ -1,0 +1,132 @@
+Estação n°;Nome;Endereço;Bairro;Inauguração;BU
+1;Instituto Biológico;Rua Morgado de Mateus, em frente ao número 652;Vila Mariana;24/05/12;não
+2;Cinemateca;Largo Senador Raul Cardoso em frente à Cinemateca - Portaria 1;Vila Mariana;24/05/12;não
+3;Rua Capitão Macedo;Rua Capitão Macedo em frente ao número 287 / Esquina com a rua Cubatão;Vila Mariana;24/05/12;não
+4;Belas Artes;Rua Dr. Álvaro Alvim em frente à Faculdade Belas Artes, número 76;Vila Mariana;24/05/12;não
+5;Metrô Vila Mariana;Rua Madre Cabrini, em frente ao número 206;Vila Mariana;24/05/12;não
+6;Rua Rio Grande;Rua Rio Grande, em frente ao número 290;Vila Mariana;24/05/12;não
+7;Humberto I;Rua Humberto I, em frente ao número 745;Vila Mariana;24/05/12;não
+8;Metrô Ana Rosa;Rua Ambrosina de Macedo, em frente ao número 44;Vila Mariana;24/05/12;não
+9; Sesc Vila Mariana;Rua Pelotas, em frente ao Shopping Vila Mariana;Vila Mariana;24/05/12;não
+10;Rua Eça de Queiroz;Rua Eça de Queiroz, em frente ao número 187;Vila Mariana;24/05/12;não
+11;Rua Cubatão;Rua Afonso de Freitas, em frente ao nº 239 / Esquina com a Rua Cubatão;Paraíso;22/08/12;não
+12;Viaduto Tutóia;Praça Santíssimo Sacramento / Esquina com a Rua Tutóia;Paraíso;18/08/12;não
+14;Itaú Cultural;Rua Leôncio de Carvalho, próximo à guia do número 98 / Esquina com a Alameda Santos;Paraíso;11/08/12;não
+15;Metrô Brigadeiro;Alameda Santos, oposto ao número 333 / Esquina com a Rua Maria Figueiredo;Paraíso;11/08/12;não
+16;Alameda J. Eugênio de Lima;Rua José Maria Lisboa, próximo ao número 266 / Esquina com a Alameda J. Eugenio de Lima;Jardim Paulista;11/08/12;não
+17;Alameda Jaú;Alameda Jaú, em frente ao número 555 /Frente à Rua Marília;Jardim Paulista;11/08/12;não
+18;Ginásio do Ibirapuera;Rua Manoel da Nóbrega, em frente ao número 1240;Paraíso;18/08/12;não
+19;Parque Ibirapuera - Portão 09;Rua Artur Etzel, em frente à Praça Pastor Rubens Lopes / Esquina com a Rua Manoel da Nóbrega;Paraíso;18/08/12;não
+20;Rua Estados Unidos;Rua Madre Teodora, em frente ao número 368 / Esquina com a Rua Veneza;Jardim América;11/08/12;não
+21;Parque Trianon;Alameda Jaú, em frente à  Praça Alexandre de Gusmão;Jardim Paulista;13/10/12;sim
+22;Alliance Française;Alameda Jaú, em frente ao número 1278 / esquina com a Alameda Min Rocha Azevedo;Jardim Paulista;11/10/12;não
+23;Teatro Renaissance;Rua Haddock Lobo, 807;Jardim Paulista;23/10/13;não
+24;Consolação;Rua da Consolação, frente ao número 2796;Jardim Paulista;13/10/12;não
+25;Bela Cintra;Rua Bela Cintra, frente ao número 2006 / Esquina com a Alameda Lorena;Jardim Paulista;26/10/12;não
+26;Oscar Freire;Rua Oscar Freire, em frente ao nº 465 / Esquina com a Rua Pe. J. Manuel;Jardim Paulista;14/10/12;não
+27;Alameda Casa Branca;Alameda Casa Branca, frente ao número 930;Jardim Paulista;25/10/12;não
+28;Canadá;Rua Canadá, em frente ao nº6, oposto ao nº11 / perto à praça Nicolau;Jardim América;26/10/12;não
+29;Guadelupe;Rua Guadelupe, em frente à praça General San Martin;Jardim América;26/10/12;não
+30;Avenida Brasil;Rua Venezuela, oposto ao número 365 / lateral do número 1802, esquina com a Avenida Brasil;Jardim América;26/10/12;não
+31;Antônio Bento;Rua Antônio Bento, em frente a Praça Dr. Clemente Faria e nº322 / Esquina com a Rua Veneza;Itaim Bibi;22/09/12;não
+32;Henrique Martins;Rua General Mena Barreto, em frente ao nº507 / Esquina com a Rua Henrique Martins;Itaim Bibi;24/09/12;não
+33;Avenida São Gabriel;Rua Pedroso Alvarenga, em frente ao nº 85 / Esquina com a Avenida São Gabriel;Itaim Bibi;03/10/12;não
+34;Joaquim Floriano;Rua Brasília, em frente ao nº 149 / Esquina com a Rua Joaquim Floriano;Itaim Bibi;22/09/12;não
+35;João Cachoeira;Rua Iaiá, lateral do nº 16 / Esquina com a Rua João Cachoeira;Itaim Bibi;01/10/12;não
+36;Pedroso Alvarenga;Rua Professor Carlos de Carvalho, lateral do nº 52 / Esquina com a Rua Pedroso Alvarenga;Itaim Bibi;01/10/12;não
+37;Parque Ibirapuera - Portão 08;Rua Leonardo Nardez, em frente ao nº 21 / Esquina com a Rua Lourenço Castanho;Vl. Nova Conceição;26/08/12;não
+38;Bastos Pereira;Rua Domingos Leme, em frente ao nº 33 / Esquina com a Rua Bastos Pereira;Vl. Nova Conceição;26/08/12;não
+39;Parque Ibirapuera - Portão 07;Rua Professor Filadelfo Azevedo em frente ao nº 179 / Esquina com a Rua Escobar Ortiz;Vl. Nova Conceição;26/08/12;não
+40;Jacques Felix;Rua Jacques Felix, em frente ao nº 408 / Esquina com a Rua Domingos Fernandes;Vl. Nova Conceição;14/09/12;não
+41;Bandeira Paulista;Rua do Consórcio, lateral nº 1182 / Esquina com a Rua Bandeira Paulista;Vila Olímpia;26/09/12;não
+42;Jesuíno Cardoso;Rua Comandatuba , lateral do nº 104 / Esquina com a Rua Ministro Jesuíno Cardoso;Vila Olímpia;01/10/12;não
+43;Santa Justina;Rua Egito, lateral do nº 75E / Esquina com a Rua Santa Justina ;Vila Olímpia;26/09/12;não
+44;Diogo Jácome;Rua Guararu, lateral do nº 518 / Esquina com a Rua Diogo Jácome;Vl. Nova Conceição;01/09/12;não
+45;Pereira Coutinho;Praça Pereira Coutinho, oposto ao nº 201 / Esquina com a Rua Baltazar Coutinho;Vl. Nova Conceição;02/09/12;não
+46;Parque Ibirapuera - Portão 06;Avenida IV Centenário, ao lado do Portão 06 do Parque do Ibirapuera;Jd. Luzitania;30/12/12;não
+47;Parque Ibirapuera - Portão 05;Avenida IV Centenário, ao lado do Portão 05 do Parque do Ibirapuera;Jd. Luzitania;30/12/12;não
+49;Parque das Bicicletas;Avenida Açocê, oposto ao nº 170 / Esquina com a Alameda Iraé;Moema;31/12/12;não
+50;N. Sra. Aparecida;Avenida Divino Salvador, em frente ao nº 58 / Esquina com a Alameda Iraé;Moema;01/01/13;não
+51;Avenida Indianópolis;Avenida Indianópolis,em frente ao nº595 / Esquina com a Alameda do Anapurus;Moema;30/12/12;não
+52;Alameda dos Anapurus;Alameda dos Anapurus, lateral do nº 451 / Esquina com a Avenida Divino Salvador;Moema;30/12/12;não
+53;Avenida dos Aratãs;Alameda dos Guaramomis, em frente ao nº 859 / Esquina com a Avenida dos Aratãs;Moema;30/12/12;não
+54;Universidade Ibirapuera;Rua Iraí, em frente ao nº 1425 / Esquina com a Rua Nhambiquara;Moema;03/01/13;não
+55;Avenida Carinás;Alameda dos Anapurus, lateral do nº 592 / Esquina com a Avenida dos Carinás;Moema;30/08/13;sim
+56;Shopping Ibirapuera;Rua Cotovia, oposto ao nº 812 / Esquina com a Rua Arapanés;Moema;31/12/12;não
+57;Rouxinol;Rua Rouxinol, em frente ao nº 550 / Esquina com a Rua Canário;Moema;30/12/12;não
+58;Fernandes de Lima;Rua Inhambu, oposto aos nºs 1649 e 1615 / Entre as Ruas Emb. Ribeiro Couto e Ilamônia;Moema;03/01/13;não
+59;Avenida Sabiá;Avenida Sabiá, lateral do nº 456 / Esquina com a Rua Canário;Moema;02/01/13;não
+60;Avenida Graúna;Rua Graúna, em frente ao nº 379 / Esquina com a Rua Pintassilgo;Moema;03/01/13;não
+61;Faculdade Anhembi Morumbi;Rua Baluarte, oposto ao nº 303 / Esquina com a Rua Casa do Ator;Vila Olímpia;23/12/12;não
+62;Faculdade Insper;Rua Quatá, oposto ao nº 339 / Entre as Ruas Teresa de Cápua e Uberabinha;Vila Olímpia;31/12/12;não
+63;Cardoso de Melo;Rua Ponta Delgada, em frente ao nº 76 / Esquina com a Avenida Dr. Cardoso de Melo Júnior;Itaim Bibi;31/12/12;não
+64;Shopping Vila Olímpia;Rua Tenerife, em frente ao nº 31 /  Esquina com a Rua Gomes de Carvalho;Vila Funchal;30/12/12;não
+65;Vila Olímpia;Rua Beira Rio, em frente ao nº 67 / Esquina com a Avenida Dr. Cardoso de Melo Júnior;Vila Olímpia;31/12/12;não
+66;Chilon;Rua Chilon, lateral do nº 443 / Esquina com a Rua Ramos Batista;Itaim Bibi;04/03/13;não
+67;Avenida Faria Lima;Rua Lopes Neto, lateral do nº 206 / Esquina com a Avenida Horácio Lafer;Itaim Bibi;22/11/13;não
+68;Parque do Povo;Avenida Henrique Chamma, em frente ao Parque do Povo;Chacara Itaim;28/12/12;não
+69;Atlântica;Rua Atlântica, lateral do nº 1897 / Esquina com a Rua Groenlândia;Jardim Paulistano;28/10/12;não
+70;MuBE;Rua Áustria, lateral do nº 310 / Esquina com a Rua Alemanha;Jardim Europa;29/10/12;não
+71;Avenida Europa;Rua Suécia, lateral do nº 308 / Esquina com a Rua Turquia;Chácara Itaim;30/10/12;não
+73;Sampaio Vidal;Rua Sampaio Vidal, em frente ao nº 791 / Esquina com a Rua Mariana Correia;Jardim Paulistano;30/10/12;não
+74;Shopping Eldorado;Rua Içana, lateral nº 3875 / Esquina com Avenida Rebouças;Jardim Europa;02/11/12;sim
+75;Clube Hebraica;Rua Ibiapinópolis, oposto ao nº 765 / Esquina com a Rua Jacarezinho;Jardim Europa;30/10/12;não
+76;Shopping Iguatemi;Rua Iramaia, em frente ao nº 137 / Esquina com a Avenida Brig. Faria Lima;Jardim Europa;30/10/12;não
+77;Esporte Clube Pinheiros;Rua Tucumã, oposto ao nº 243 / Esquina com a Rua Dr. Mário Ferraz;Chácara Itaim;02/11/12;não
+78;Cidade Jardim;Rua Franz Schubert, em frente ao nº 1967 / Esquina com a Rua Frederic Chopin;Chácara Itaim;24/12/12;não
+79;Secretaria da Educação;Rua Dr. Diogo de Faria, em frente ao nº 1247 / Esquina com a Rua José Magalhães;Vila Clementino;30/10/12;não
+80;UNIFESP;Rua Napoleão de Barros, em frente ao nº 832 / Esquina com a Rua Pedro de Toledo;Vila Clementino;02/11/12;não
+81;Liceu Pasteur;Rua Dr. Diogo de Faria, em frente ao nº 350 / Esquina com a Rua Coronel Lisboa;Vila Clementino;30/10/12;não
+82;Shopping Santa Cruz;Rua Machado Bitencourt, em frente ao nº 361 / Esquina com a Rua Loefgren;Vila Clementino;02/11/12;sim
+83;Altino Arantes;Rua Dr. Altino Arantes, em frente ao nº 142 / Esquina com a Rua Arabé;Vila Clementino;30/12/12;não
+84;UNIP;Rua Dr. Altino Arantes, lateral do nº 937 / Esquina com a Rua Dr. Bacelar;Vila Clementino;02/11/12;não
+85;Morais de Barros;Rua Morais de Barros, em frente ao nº 960 / Esquina com a Avenida Vereador José Diniz;Campo Belo;04/01/13;não
+86;Gil Eanes;Rua Gil Eanes, em frente ao nº 200 /  Esquina com a Rua Vieira de Moraes;Campo Belo;07/11/12;não
+87;Gabrielle D'Annunzio;Rua Gabrielle D'Annunzio, oposto ao nº 390 / Esquina com a Avenida Vereador José Diniz;Campo Belo;14/11/12;não
+88;Flórida;Rua Flórida, lateral do nº 3816 /  Esquina com a Avenida Santo Amaro;Cidades Monções;23/12/12;não
+90;Luisiânia;Rua Luisiânia, em frente ao nº 260 / Esquina com a Rua Nova York;Cidades Monções;09/01/13;não
+91;Arizona;Rua Arizona, lateral do nº 1335 / Esquina com a Rua Califórnia;Cidades Monções;07/12/12;não
+92;Açaí Clube;Rua Pe. Antônio José dos Santos, oposto ao nº 859 / Esquina com a Rua Ribeiro do Vale;Cidades Monções;16/12/12;não
+93;Ribeiro do Vale;Rua Ribeiro do Vale, em frente ao nº 1460 / Esquina com a Rua Texas;Brooklin Novo;23/12/12;não
+94;Bandeirantes;Rua Conceição de Monte Alegre, em frente ao nº 1661 / Esquina com a Rua Brejo Alegre;Brooklin Novo;16/11/12;não
+95;Procópio Ferreira;Rua Rosa Gaeta Lazará, lateral da Praça Procópio Ferreira / Esquina com a Rua Kansas;Brooklin Novo;16/12/12;não
+96;Hípica Paulista;Rua Quintana, oposto ao nº 198 / Esquina com a Rua Porto Martins;Brooklin Novo;07/12/12;não
+97;Lions Monções;Rua Flórida, em frente ao nº 1442 / Esquina com a Rua Arandu;Itaim Bibi;07/12/12;não
+98;James Watt;Rua James Watt, lateral do nº 65 / Esquina com a Avenida Eng. Luis Carlos Berrini;Jardim Edith;07/12/12;não
+99;Berrini;Rua Guilherme Barbosa de Melo, lateral do nº 237 / Esquina com a Rua Sansão Alves dos Santos;Itaim Bibi;16/12/12;não
+100;Guararapes;Praça Gal. Enéias Martins Nogueira, oposto a lateral do nº 2064 / Esquina com a Rua Guararapes;Itaim Bibi;04/01/13;não
+103;CPTM Cidade Universitária;Rua Umburanas, em frente ao número 78 / Esquina com a Rua Pedroso de Moraes;Alto de Pinheiros;31/08/13;sim
+104;Pedroso de Moraes;Pça Ernani Braga entre Rua Pedroso de Morais e Rua Evangelista Rodrigues;Alto de Pinheiros;30/08/13;não
+105;Tomie Ohtake;Rua Fernão Dias, em frente ao número 53 / Esquina com Avenida Brig. Faria Lima;Pinheiros;16/0/2013;sim
+107;Metrô Fradique;Rua Mateus Grou, em frente ao número 57 / Esquina com a Rua dos Pinheiros;Pinheiros;03/10/13;sim
+108;Simão Alvares;Rua Simão Álvares, em frente ao número 770;Pinheiros;15/08/13;sim
+109;Morás;Rua Morás oposto ao n. 506;Pinheiros;15/08/13;sim
+110;Metrô Vila Madalena;Rua Paulistânia, em frente ao número 432 / Esquina com a Rua Agissé;Pinheiros;06/09/13;sim
+111;Wisard;Rua Wisard, em frente ao número 94;Pinheiros;13/09/13;sim
+112;Cônego Eugênio Leite;Rua Cônego Eugênio Leite, em frente ao número 1161 / Esquina com a Rua Cardeal Arcoverde;Pinheiros;15/08/13;sim
+113;João Moura;Rua João Moura, em frente ao número 1005 / Esquina com a Rua Cardeal Arcoverde;Pinheiros;15/08/13;sim
+114;Metrô Sumaré;Rua Professor Rubião Meira, em frente ao número 31 / Esquina com a Rua Oscar Freire;Pinheiros;13/09/13;sim
+115;Metrô Clínicas;Rua Arruda Alvim, em frente ao número 35;Bela Vista;23/10/13;sim
+116;Lisboa;Rua Lisboa, 306/298/294;Jardim Paulista;06/09/13;sim
+117;Capote Valente;Rua Capote Valente, em frente ao número 232 / Próximo a Avenida Rebouças;Jardim Paulista;03/10/13;sim
+118;Augusta;Rua Luis Coelho, em frente ao número 117;Consolação;22/11/13;sim
+120;Shopping Frei Caneca;Rua Herculano de Freitas, em frente ao número 47;Bela Vista;03/10/13;sim
+122;MASP;Rua Carlos Comenale,37  (fr. Secr. Saúde);Bela Vista;24/10/13;não
+123;Almirante Marques de Leao;Rua Alm. Marques Leão 336;Bela Vista;27/09/13;sim
+124;Conselheiro Carrão;Rua Conselheiro Ramalho, em frente ao número 701 / Esquina com a Rua Conselheiro Carrão;Bela Vista;24/10/13;sim
+125;Santa Madalena;Rua Doutor Alfredo Ellis, 198 (Estacionamento) / Esquina com a Rua Santa Madalena;Bela Vista;14/10/13;sim
+126;Ribeirão Preto;Alameda Joaquim Eugênio de Lima, 180 / 182;Sé;18/09/13;sim
+127;Metrô Paraiso;Rua Apeninos, em frente ao número 897/ 911;Vila Mariana;24/10/13;não
+144;Cem. Consolação/Sergipe;Rua Itambé 435;Consolação;06/12/13;não
+145;Praça Buenos Aires;Rua Bahia 160 ( Proximo a Rua Piaui);;06/12/13;sim
+146;Estádio do Pacaembu;Rua Eng. Edgard Egidio de Souza entre Rua Alagoas e Rua Itatiara;Consolação;06/12/13;sim
+147;Shopping Higienópolis;Rua Jaguaribe, 777;Santa Cecília;06/12/13;não
+148;Al. Barros/Tupi;Rua Tupi 330/360;Santa Cecília;06/12/13;não
+150;Metro Santa Cecília;Rua Frederico Abranches, frente 337/349 ( Bco Itaú);Santa Cecília;05/12/13;não
+151;Santa Casa;Rua Dr. Cesário Mota Jr, 249;Consolação;09/12/13;não
+156;Brig.Galvao/Fac. Oswaldo Cruz;Rua Conselheiro Brotero, 456;;jan/14;não
+160;José Paulino;Rua José Paulino, 931;;jan/14;não
+162;Metro Armênia;Rua Alfredo Maia, 534;;jan/14;não
+163;Metro Tiradentes/Fatec;Rua Três Rios , 24;;jan/14;não
+;;;;;
+;;;;;

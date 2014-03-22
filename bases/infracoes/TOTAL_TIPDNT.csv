@@ -1,0 +1,28 @@
+Codigo;Tipo_Veiculo
+01;BICICLETA           
+02;CICLOMOTOR          
+03;MOTONETA            
+04;MOTOCICLETA         
+05;TRICICLO            
+06;AUTOMOVEL           
+07;MICROONIBUS         
+08;ONIBUS              
+09;BONDE               
+10;REBOQUE             
+11;SEMI-REBOQUE        
+12;CHARRETE            
+13;CAMIONETA           
+14;CAMINHAO            
+15;CARROCA             
+16;CARRO DE MAO        
+17;CAMINHAO TRATOR     
+18;TRATOR RODAS        
+19;TRATOR ESTEIRAS     
+20;TRATOR MISTO        
+21;QUADRICICLO         
+22;CHASSI-PLATAFORMA   
+23;CAMINHONETE         
+24;SIDE-CAR            
+25;UTILITARIO          
+26;MOTOR-CASA          
+99;INEXISTENTE       
