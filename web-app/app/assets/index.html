@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8"/>
+  <title>SPView</title>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.13.0/css/semantic.min.css" rel="stylesheet" type="text/css">
+  <link href="app.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <div class="ui inverted menu">
+    <a id='camadas-button' class="item">
+      <i class="reorder icon"></i>
+    </a>
+  </div>
+  </nav>
+
+  <div id='camadas-menu' class="ui styled sidebar">
+    <h2 class="ui block header">
+      <i class="black dashboard icon"></i>
+      <div class="content">
+        Camadas
+        <div class="sub header">Selecione as camadas que você deseja visualizar.</div>
+      </div>
+    </h2>    
+    <div class="ui fluid vertical menu">
+      <div class=" item">
+        <i class="outline ambulance icon"></i>
+        <div class="ui toggle checkbox">
+          <input name="acidentes" type="checkbox">
+          <label>Acidentes</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <iframe width='100%' height='520' frameborder='0' src='http://oesgalha.cartodb.com/viz/4a933b04-b1bf-11e3-8f25-0e230854a1cb/embed_map?title=true&description=true&search=false&shareable=true&cartodb_logo=true&layer_selector=false&legends=true&scrollwheel=true&fullscreen=true&sublayer_options=1&sql=&sw_lat=-23.745862408256837&sw_lon=-47.038334012031555&ne_lat=-23.440047337511302&ne_lon=-46.049564480781555' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+  
+  <script src='//code.jquery.com/jquery-2.1.0.min.js'></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.13.0/javascript/semantic.min.js'></script>
+  <script src='app.js'></script>
+</body>
