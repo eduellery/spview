@@ -22,6 +22,7 @@ def processa_ocorrencias(params):
   cod_from = params['cod_from']
   cod_to = params['cod_to']
   proxy = params['proxy']
+  thread_n = params['thread_n']
   
   geocoder = Geocoder()
   geocoder.set_proxy(proxy)
@@ -38,7 +39,7 @@ def processa_ocorrencias(params):
     cod_ocorrencia = row[0]
     rua = row[1]
     altura = row[2]
-    print(count)
+    print('thread #%s: %s' % (thread_n, count))
     if altura and altura != 'NULL':
       address = 'Brazil, SP, São Paulo, %s, %s' % (rua, altura)
     else:
@@ -67,6 +68,7 @@ params = []
 cod_range = range(cod_min, cod_max, (cod_max-cod_min)//n_threads)
 for i in range(n_threads):
   params.append({
+    'thread_n': i,
     'proxy': random.choice(proxy_list),
     'cod_from': 'C%s' % (cod_range[i]),
     'cod_to': 'C%s' % (cod_range[i+1]),
