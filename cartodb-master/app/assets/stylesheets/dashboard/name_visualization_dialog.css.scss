@@ -1,0 +1,17 @@
+
+  /**
+   *  Name visualization dialog styles
+   */
+
+  @import "../common/mixins";
+  @import "../common/form-elements";
+
+  .name_visualization {
+    @include default-form-info();
+    @include default-input();
+
+    input {
+      width:346px;
+      padding:14px 11px;
+    }
+  }
