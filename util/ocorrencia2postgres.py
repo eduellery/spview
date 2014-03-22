@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS ocorrencia (
     ocorrencia text,
     tipo text,
     local text,
-    altura bigint,
+    altura text,
     sentido text,
     pista text,
     faixaOcupacao text,
@@ -29,7 +29,6 @@ CREATE TABLE IF NOT EXISTS ocorrencia (
     fim text,
     fim_manual text
 )
-CREATE INDEX codigo_idx ON ocorrencia (codigo);
 COPY ocorrencia FROM '/home/eltermann/dados/ocorrencias/Ocorrencias.csv.utf' DELIMITER ';' CSV HEADER;
 """
 codigo_ocorrencia = {
