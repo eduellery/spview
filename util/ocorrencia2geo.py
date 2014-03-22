@@ -22,10 +22,13 @@ geocoder = Geocoder()
 
 cur.execute("""SELECT ocorrencia, local, altura FROM ocorrencia""")
 result = cur.fetchall()
+count = 0
 for row in result:
+  count += 1
   cod_ocorrencia = row[0]
   rua = row[1]
   altura = row[2]
+  print(count)
   if altura and altura != 'NULL':
     address = '%s, %s' % (rua, altura)
   else:
