@@ -72,8 +72,8 @@
   <script src="torque.js"></script>
   <script>
 
-    var amountSteps =  30;
-    var animationDuration = 16;
+    var amountSteps =  10;
+    var animationDuration = 30;
     var animationSpeed = (amountSteps / animationDuration);
     var currentStep = 0;
 
@@ -160,7 +160,7 @@
     torqueLayer.on('change:time', function(changes) {
       currentStep = changes.step;
       if (changes.time.getHours) {
-        $('#map-time').text((changes.time.getHours() + 2) % 24 + ':' + changes.time.getMinutes());
+        $('#map-time').text( ('0' + ((changes.time.getHours() + 2) % 24)).slice(-2) + ':' + ('0' + changes.time.getMinutes()).slice(-2));
       }
       torqueLayer2.setStep(currentStep);
     });
