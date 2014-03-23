@@ -6,18 +6,10 @@ $('#camadas-button').click(function() {
   $('#camadas-menu').sidebar('toggle');
 });
 
-var amountSteps = {
-  map1: 2048
-}
-var animationDuration = {
-  map1: 120
-}
-var animationSpeed = {
-  map1: (amountSteps.map1 / animationDuration.map1)
-}
-var currentStep = {
-  map1: 0
-}
+var amountSteps =  256;
+var animationDuration = 15;
+var animationSpeed = (amountSteps / animationDuration);
+var currentStep = 0;
 
 var map = new google.maps.Map(document.getElementById('map'), {
     center: new google.maps.LatLng(-23.546523, -46.633407),
@@ -40,43 +32,17 @@ var torqueLayer = new torque.GMapsTorqueLayer({
   column : 'timestr',
   countby : 'max(extensao)',
   resolution: 1,
-  steps: amountSteps.map1,
+  steps: amountSteps,
   blendmode : 'lighter',
-  animationDuration: animationDuration.map1,
+  animationDuration: animationDuration,
+  sql: "SELECT * FROM lentidao_sumario_semanal WHERE semana LIKE '0'",
   map: map
 });
 
 torqueLayer.on('change:time', function(changes) {
-  currentStep.map1 = changes.step;
-  if (changes.time.getDay) {
-    var day = ''
-    switch (changes.time.getDay()) {
-    case 2:
-      day = 'Domingo';
-      break;
-    case 3:
-      day = 'Segunda';
-      break;
-    case 4:
-      day = 'Terça';
-      break;
-    case 5:
-      day = 'Quarta';
-      break;
-    case 6:
-      day = 'Quinta';
-      break;
-    case 0:
-      day = 'Sexta';
-      break;
-    case 1:
-      day = 'Sábado';
-      break;
-    default:
-      day = 'Domingo';
-      break;
-    }
-    $('#map1-time').text(day + ' ' + changes.time.getHours() + ':' + changes.time.getMinutes());
+  currentStep = changes.step;
+  if (changes.time.getHours) {
+    $('#map1-time').text(changes.time.getHours() + ':' + changes.time.getMinutes());
   }
 });
 
@@ -92,7 +58,7 @@ var timeoutFlowButton;
 $('#map1-backward').mousedown(function(){
     timeoutFlowButton = setInterval(function(){
         torqueLayer.pause();
-        torqueLayer.setStep(currentStep.map1 - animationSpeed.map1)
+        torqueLayer.setStep(currentStep - animationSpeed)
     }, 100);
 
     return false;
@@ -101,7 +67,7 @@ $('#map1-backward').mousedown(function(){
 $('#map1-forward').mousedown(function(){
     timeoutFlowButton = setInterval(function(){
         torqueLayer.pause();
-        torqueLayer.setStep(currentStep.map1 + animationSpeed.map1)
+        torqueLayer.setStep(currentStep + animationSpeed)
     }, 100);
 
     return false;
@@ -142,3 +108,44 @@ var DEFAULT_CARTOCSS = [
 torqueLayer.setCartoCSS(DEFAULT_CARTOCSS);
 torqueLayer.setMap(map);
 torqueLayer.play()
+
+// Filtro por dia da semana
+$('.map1-weekday').click(function() {
+  $('#map1-title').text('Mapa de Lentidão (' + $(this).text() + ')');
+  FiltrarMapa1[$(this).attr('id')](torqueLayer);
+});
+
+var FiltrarMapa1 = {
+  dom_map1: function(layer) {
+    layer.setSQL("SELECT * FROM lentidao_sumario_semanal WHERE semana LIKE '0'");
+    return true;
+  },
+  seg_map1: function(layer) {
+    layer.setSQL("SELECT * FROM lentidao_sumario_semanal WHERE semana LIKE '1'");
+    return true;
+  },
+  ter_map1: function(layer) {
+    layer.setSQL("SELECT * FROM lentidao_sumario_semanal WHERE semana LIKE '2'");
+    return true;
+  },
+  qua_map1: function(layer) {
+    layer.setSQL("SELECT * FROM lentidao_sumario_semanal WHERE semana LIKE '3'");
+    return true;
+  },
+  qui_map1: function(layer) {
+    layer.setSQL("SELECT * FROM lentidao_sumario_semanal WHERE semana LIKE '4'");
+    return true;
+  },
+  sex_map1: function(layer) {
+    layer.setSQL("SELECT * FROM lentidao_sumario_semanal WHERE semana LIKE '5'");
+    return true;
+  },
+  sab_map1: function(layer) {
+    layer.setSQL("SELECT * FROM lentidao_sumario_semanal WHERE semana LIKE '6'");
+    return true;
+  }
+}
+
+
+
+

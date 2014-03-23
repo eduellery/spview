@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <h1 class="ui inverted black block header">
+  <h1 class="ui inverted black block glued header">
     <i class="building icon"></i>
     <div class="content">
       SPView
@@ -29,34 +29,29 @@
     </h2>    
   </div>
 
-  <div class="ui two column middle aligned relaxed grid basic segment">
+  <div class="ui two column grid attached borderless segment">
     <div class="column">
       <div class="ui red inverted attached small menu">
-        <div class="item">
-          <i class="map icon"></i><span id='map1-title'>Mapa de Lentidão</span>
+        <div class="ui dropdown item">
+          Escolher dia da semana <i class="icon dropdown"></i>
+          <div class="menu">
+            <a id='dom_map1' class="item active map1-weekday">Domingo</a>
+            <a id='seg_map1' class="item map1-weekday">Segunda</a>
+            <a id='ter_map1' class="item map1-weekday">Terça</a>
+            <a id='qua_map1' class="item map1-weekday">Quarta</a>
+            <a id='qui_map1' class="item map1-weekday">Quinta</a>
+            <a id='sex_map1' class="item map1-weekday">Sexta</a>
+            <a id='sab_map1' class="item map1-weekday">Sábado</a>
+          </div>
+        </div>
+        <div class="right menu">
+          <div class="item">
+            <i class="map icon"></i><span id='map1-title'>Mapa de Lentidão (Domingo)</span>
+          </div>
         </div>
       </div>
       <div class="ui attached segment">
         <div id="map" style='width: 100%; height: 500px;'></div>
-      </div>
-      <div class="ui red inverted attached small menu">
-        <a id='map1-backward' class="item">
-          <i class="backward icon"></i>
-        </a>
-        <a id='#map1-play' class="active item map1-control">
-          <i class="play icon"></i>
-        </a>
-        <a id='#map1-stop' class="item map1-control">
-          <i class="stop icon"></i>
-        </a>
-        <a id='map1-forward' class="item">
-          <i class="forward icon"></i>
-        </a>
-        <div class="right menu">
-          <div class='item'>
-            <i class='time icon'></i> <span id='map1-time'></span>
-          </div>
-        </div>
       </div>
     </div>
     <div class="ui vertical divider">
@@ -66,6 +61,25 @@
       <div class="ui segment">
         <b>Inbox</b>
         <p>Welcome to your inbox. Would you like to see more information?</p>
+      </div>
+    </div>
+  </div>
+  <div class="ui red inverted attached small menu">
+    <a id='map1-backward' class="item">
+      <i class="backward icon"></i>
+    </a>
+    <a id='#map1-play' class="active item map1-control">
+      <i class="play icon"></i>
+    </a>
+    <a id='#map1-stop' class="item map1-control">
+      <i class="stop icon"></i>
+    </a>
+    <a id='map1-forward' class="item">
+      <i class="forward icon"></i>
+    </a>
+    <div class="right menu">
+      <div class='item'>
+        <i class='time icon'></i> <span id='map1-time'></span>
       </div>
     </div>
   </div>

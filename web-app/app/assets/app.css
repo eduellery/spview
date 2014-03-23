@@ -4,6 +4,10 @@ html, body {
   font-family: 'Source Sans Pro', sans-serif !important;
 }
 
-.ui.inverted.menu .item .ui.checkbox > label {
-  color: #FFFFFF;
+.ui.borderless {
+  box-shadow: none !important;
+}
+
+.ui.glued {
+	margin-top: -10px !important;
 }
