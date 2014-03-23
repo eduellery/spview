@@ -1,4 +1,5 @@
 from django.conf.urls import patterns, include, url
+from waze_django.views import WazeEndpointHandler
 
 from django.contrib import admin
 admin.autodiscover()
@@ -8,5 +9,5 @@ urlpatterns = patterns('',
     # url(r'^$', 'waze_django.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'waze-django', WazeEndpointHandler.as_view(), name='waze_django_endpoint'),
 )
