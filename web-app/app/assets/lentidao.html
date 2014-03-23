@@ -15,33 +15,20 @@
   <nav class="ui inverted black block glued menu">
     <h3 class="header item"><i class="building icon"></i> SPView</h3>
     <a href='index.html' class="item"><i class="truck icon"></i> Comparação Lentidão</a>
-    <a href='waze.html' class="active item"><i class="users icon"></i>Comparação com dados do Waze</a>
-    <a href='lentidao.html' class="item"><i class="lab icon"></i>Lentidão Estendida</a>
+    <a href='waze.html' class="item"><i class="users icon"></i>Comparação com dados do Waze</a>
+    <a href='lentidao.html' class="active item"><i class="lab icon"></i>Lentidão Estendida</a>
     <a href='ocorrencias.html' class="item"><i class="fire icon"></i>Ocorrências</a>
   </nav>
 
-  <div class="ui two column grid attached borderless segment">
+  <div class="ui attached borderless segment">
     <div class="column">
       <div class="ui red inverted attached small menu">
         <div class="item">
-          <i class="map icon"></i><span id='map1-title'>Mapa de Lentidão (Waze)</span>
+          <i class="map icon"></i><span id='map1-title'>Lentidaão do mês de Junho</span>
         </div>
       </div>
       <div class="ui attached segment">
         <div id="map" style='width: 100%; height: 500px;'></div>
-      </div>
-    </div>
-    <div class="ui vertical divider">
-      <i class="resize horizontal icon"></i>
-    </div>
-    <div class="column no-margin-top">
-      <div class="ui red inverted attached small menu">
-        <div class="item">
-          <i class="map icon"></i><span id='map2-title'>Mapa de Lentidão (CET)</span>
-        </div>
-      </div>
-      <div class="ui attached segment">
-        <div id="map2" style='width: 100%; height: 500px;'></div>
       </div>
     </div>
   </div>
@@ -72,9 +59,8 @@
   <script src="carto.js"></script>
   <script src="torque.js"></script>
   <script>
-
-    var amountSteps = 200;
-    var animationDuration = 20;
+    var amountSteps = 50;
+    var animationDuration = 10;
     var animationSpeed = (amountSteps / animationDuration);
     var currentStep = 0;
 
@@ -83,11 +69,11 @@
     " marker-width: 5; ",
     ' marker-fill: ; #B10026;',
     ' [value > 10] { marker-fill: #E31A1C; }',
-    ' [value > 50] { marker-fill: #FC4E2A; }',
-    ' [value > 100] { marker-fill: #FD8D3C; }',
-    ' [value > 250] { marker-fill: #FEB24C; }',
-    ' [value > 500] { marker-fill: #FED976; }',
-    ' [value > 1000] { marker-fill: #FFFFB2; }',
+    ' [value > 20] { marker-fill: #FC4E2A; }',
+    ' [value > 30] { marker-fill: #FD8D3C; }',
+    ' [value > 40] { marker-fill: #FEB24C; }',
+    ' [value > 50] { marker-fill: #FED976; }',
+    ' [value > 60] { marker-fill: #FFFFB2; }',
     ' [frame-offset = 1] {  marker-width: 6; marker-fill-opacity: 0.9;}',
     ' [frame-offset = 2] {  marker-width: 7; marker-fill-opacity: 0.8;}',
     ' [frame-offset = 3] {  marker-width: 8; marker-fill-opacity: 0.7;}',
@@ -111,71 +97,26 @@
     });
     var torqueLayer = new torque.GMapsTorqueLayer({
       provider: 'sql_api',
-      user : 'joao12',
-      table : 'waze1140',
-      column : 'timestr',
-      countby : 'max(extensao)',
+      user : 'spview',
+      table : 'trafego_final',
+      column : 'data',
+      countby : 'count(cartodb_id)',
       resolution: 1,
       steps: amountSteps,
       blendmode : 'lighter',
       animationDuration: animationDuration,
-      sql: "SELECT * FROM waze1140",
+      sql: "SELECT * FROM trafego_final",
       cartocss: DEFAULT_CARTOCSS,
       map: map
     });
     torqueLayer.setMap(map);
     torqueLayer.play();
 
-    var map2 = new google.maps.Map(document.getElementById('map2'), {
-        center: new google.maps.LatLng(-23.546523, -46.633407),
-        zoom: 10,
-        mapTypeControl:false,
-        minZoom:1,
-        scaleControl: false,
-        streetViewControl: false,
-        overviewMapControl: false,
-        draggable: false,
-        zoomControl: false,
-        scrollwheel: false,
-        panControl: false,
-        disableDoubleClickZoom: true,
-        styles: [ { "featureType": "landscape", "stylers": [ { "visibility": "off" } ] },{ "stylers": [ { "lightness": -16 }, { "saturation": 1 }, { "gamma": 0.84 } ] } ]
-    });
-    var torqueLayer2 = new torque.GMapsTorqueLayer({
-      provider: 'sql_api',
-      user : 'ellery',
-      table : 'lentidao_sumario_semanal',
-      column : 'timestr',
-      countby : 'max(extensao)',
-      resolution: 1,
-      steps: amountSteps,
-      blendmode : 'lighter',
-      animationDuration: animationDuration,
-      sql: "SELECT * FROM lentidao_sumario_semanal WHERE semana LIKE '6' AND timestr BETWEEN '2013-01-07 05:00:00' AND '2013-01-07 11:40:00'",
-      cartocss: DEFAULT_CARTOCSS,
-      map: map2
-    });
-    torqueLayer2.setMap(map2);
-    torqueLayer2.play();
-
-    var syncMap = function() {
-      map2.fitBounds(map.getBounds());
-      map2.setZoom(map.getZoom());
-    }
-
-    google.maps.event.addListener(map, 'center_changed', syncMap);
-    google.maps.event.addListener(map, 'zoom_changed', syncMap);
-
     torqueLayer.on('change:time', function(changes) {
       currentStep = changes.step;
       if (changes.time.getHours) {
-        $('#map-time').text( ('0' + ((changes.time.getHours() + 2) % 24)).slice(-2) + ':' + ('0' + changes.time.getMinutes()).slice(-2));
+        $('#map-time').text( changes.time.getDate() + ' de Junho de 2013 - ' + ('0' + ((changes.time.getHours() + 2) % 24)).slice(-2) + ':' + ('0' + changes.time.getMinutes()).slice(-2));
       }
-      torqueLayer2.setStep(currentStep);
-    });
-
-    torqueLayer2.on('change:time', function(changes) {
-      console.log(changes.time);
     });
 
     var timeoutFlowButton;
@@ -183,9 +124,7 @@
     $('#map-backward').mousedown(function(){
         timeoutFlowButton = setInterval(function(){
             torqueLayer.pause();
-            torqueLayer2.pause();
             torqueLayer.setStep(currentStep - animationSpeed);
-            torqueLayer2.setStep(currentStep - animationSpeed);
         }, 100);
 
         return false;
@@ -194,9 +133,7 @@
     $('#map-forward').mousedown(function(){
         timeoutFlowButton = setInterval(function(){
             torqueLayer.pause();
-            torqueLayer2.pause();
             torqueLayer.setStep(currentStep + animationSpeed);
-            torqueLayer2.setStep(currentStep + animationSpeed);
         }, 100);
 
         return false;
@@ -206,7 +143,6 @@
         if (timeoutFlowButton) {
           if (! $('#map-stop').hasClass('active')) {
             torqueLayer.play();
-            torqueLayer2.play();
           }
         }
         clearInterval(timeoutFlowButton);
@@ -217,11 +153,9 @@
     $('.maps-control').click(function() {
       if (! $(this).hasClass('active')) {
         torqueLayer.toggle();
-        torqueLayer2.toggle();
         $('.maps-control').toggleClass('active');
       }
     });
-
 
   </script>
 </body>
