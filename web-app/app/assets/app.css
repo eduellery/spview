@@ -11,3 +11,7 @@ html, body {
 .ui.glued {
 	margin-top: -10px !important;
 }
+
+.no-margin-top {
+	margin-top: 0px !important;
+}

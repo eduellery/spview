@@ -11,79 +11,6 @@ var animationDuration = 15;
 var animationSpeed = (amountSteps / animationDuration);
 var currentStep = 0;
 
-var map = new google.maps.Map(document.getElementById('map'), {
-    center: new google.maps.LatLng(-23.546523, -46.633407),
-    zoom: 10,
-    mapTypeControl:false,
-    minZoom:1,
-    scaleControl: false,
-    streetViewControl: false,
-    overviewMapControl: false,
-});
-
-var map_style = {};
-map_style.google_maps_customization_style = [ { "featureType": "landscape", "stylers": [ { "visibility": "off" } ] },{ "stylers": [ { "lightness": -16 }, { "saturation": 1 }, { "gamma": 0.84 } ] } ];
-map.setOptions({styles:map_style.google_maps_customization_style});
-
-var torqueLayer = new torque.GMapsTorqueLayer({
-  provider: 'sql_api',
-  user : 'ellery',
-  table : 'lentidao_sumario_semanal',
-  column : 'timestr',
-  countby : 'max(extensao)',
-  resolution: 1,
-  steps: amountSteps,
-  blendmode : 'lighter',
-  animationDuration: animationDuration,
-  sql: "SELECT * FROM lentidao_sumario_semanal WHERE semana LIKE '0'",
-  map: map
-});
-
-torqueLayer.on('change:time', function(changes) {
-  currentStep = changes.step;
-  if (changes.time.getHours) {
-    $('#map1-time').text(changes.time.getHours() + ':' + changes.time.getMinutes());
-  }
-});
-
-$('.map1-control').click(function() {
-  if (! $(this).hasClass('active')) {
-    torqueLayer.toggle();
-    $('.map1-control').toggleClass('active');
-  }
-});
-
-var timeoutFlowButton;
-
-$('#map1-backward').mousedown(function(){
-    timeoutFlowButton = setInterval(function(){
-        torqueLayer.pause();
-        torqueLayer.setStep(currentStep - animationSpeed)
-    }, 100);
-
-    return false;
-});
-
-$('#map1-forward').mousedown(function(){
-    timeoutFlowButton = setInterval(function(){
-        torqueLayer.pause();
-        torqueLayer.setStep(currentStep + animationSpeed)
-    }, 100);
-
-    return false;
-});
-
-$(document).mouseup(function(){
-    if (timeoutFlowButton) {
-      if (! $('#map1-stop').hasClass('active')) {
-        torqueLayer.play();
-      }
-    }
-    clearInterval(timeoutFlowButton);
-    timeoutFlowButton = false;
-    return false;
-});
-
 var DEFAULT_CARTOCSS = [
 '#layer {',
 " marker-width: 5; ",
@@ -105,17 +32,74 @@ var DEFAULT_CARTOCSS = [
 '}'
 ].join('\n');
 
-torqueLayer.setCartoCSS(DEFAULT_CARTOCSS);
+var map = new google.maps.Map(document.getElementById('map'), {
+    center: new google.maps.LatLng(-23.546523, -46.633407),
+    zoom: 10,
+    mapTypeControl:false,
+    minZoom:1,
+    scaleControl: false,
+    streetViewControl: false,
+    overviewMapControl: false,
+    styles: [ { "featureType": "landscape", "stylers": [ { "visibility": "off" } ] },{ "stylers": [ { "lightness": -16 }, { "saturation": 1 }, { "gamma": 0.84 } ] } ]
+});
+var torqueLayer = new torque.GMapsTorqueLayer({
+  provider: 'sql_api',
+  user : 'ellery',
+  table : 'lentidao_sumario_semanal',
+  column : 'timestr',
+  countby : 'max(extensao)',
+  resolution: 1,
+  steps: amountSteps,
+  blendmode : 'lighter',
+  animationDuration: animationDuration,
+  sql: "SELECT * FROM lentidao_sumario_semanal WHERE semana LIKE '0'",
+  cartocss: DEFAULT_CARTOCSS,
+  map: map
+});
 torqueLayer.setMap(map);
-torqueLayer.play()
+torqueLayer.play();
+
+var map2 = new google.maps.Map(document.getElementById('map2'), {
+    center: new google.maps.LatLng(-23.546523, -46.633407),
+    zoom: 10,
+    mapTypeControl:false,
+    minZoom:1,
+    scaleControl: false,
+    streetViewControl: false,
+    overviewMapControl: false,
+    styles: [ { "featureType": "landscape", "stylers": [ { "visibility": "off" } ] },{ "stylers": [ { "lightness": -16 }, { "saturation": 1 }, { "gamma": 0.84 } ] } ]
+});
+var torqueLayer2 = new torque.GMapsTorqueLayer({
+  provider: 'sql_api',
+  user : 'ellery',
+  table : 'lentidao_sumario_semanal',
+  column : 'timestr',
+  countby : 'max(extensao)',
+  resolution: 1,
+  steps: amountSteps,
+  blendmode : 'lighter',
+  animationDuration: animationDuration,
+  sql: "SELECT * FROM lentidao_sumario_semanal WHERE semana LIKE '1'",
+  cartocss: DEFAULT_CARTOCSS,
+  map: map2
+});
+torqueLayer2.setMap(map2);
+torqueLayer2.play();
+
 
 // Filtro por dia da semana
 $('.map1-weekday').click(function() {
   $('#map1-title').text('Mapa de Lentidão (' + $(this).text() + ')');
-  FiltrarMapa1[$(this).attr('id')](torqueLayer);
+  FiltrarMapa[$(this).attr('id')](torqueLayer);
 });
 
-var FiltrarMapa1 = {
+$('.map2-weekday').click(function() {
+  $('#map2-title').text('Mapa de Lentidão (' + $(this).text() + ')');
+  FiltrarMapa[$(this).attr('id')](torqueLayer2);
+});
+
+
+var FiltrarMapa = {
   dom_map1: function(layer) {
     layer.setSQL("SELECT * FROM lentidao_sumario_semanal WHERE semana LIKE '0'");
     return true;
@@ -147,5 +131,56 @@ var FiltrarMapa1 = {
 }
 
 
+torqueLayer.on('change:time', function(changes) {
+  currentStep = changes.step;
+  if (changes.time.getHours) {
+    $('#map-time').text(changes.time.getHours() + ':' + changes.time.getMinutes());
+  }
+  torqueLayer2.setStep(currentStep);
+});
+
+var timeoutFlowButton;
+
+$('#map-backward').mousedown(function(){
+    timeoutFlowButton = setInterval(function(){
+        torqueLayer.pause();
+        torqueLayer2.pause();
+        torqueLayer.setStep(currentStep - animationSpeed);
+        torqueLayer2.setStep(currentStep - animationSpeed);
+    }, 100);
+
+    return false;
+});
+
+$('#map-forward').mousedown(function(){
+    timeoutFlowButton = setInterval(function(){
+        torqueLayer.pause();
+        torqueLayer2.pause();
+        torqueLayer.setStep(currentStep + animationSpeed);
+        torqueLayer2.setStep(currentStep + animationSpeed);
+    }, 100);
+
+    return false;
+});
+
+$(document).mouseup(function(){
+    if (timeoutFlowButton) {
+      if (! $('#map-stop').hasClass('active')) {
+        torqueLayer.play();
+        torqueLayer2.play();
+      }
+    }
+    clearInterval(timeoutFlowButton);
+    timeoutFlowButton = false;
+    return false;
+});
+
+$('.maps-control').click(function() {
+  if (! $(this).hasClass('active')) {
+    torqueLayer.toggle();
+    torqueLayer2.toggle();
+    $('.maps-control').toggleClass('active');
+  }
+});
 
 

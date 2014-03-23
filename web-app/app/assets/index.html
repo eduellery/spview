@@ -57,29 +57,47 @@
     <div class="ui vertical divider">
       <i class="resize horizontal icon"></i>
     </div>
-    <div class="column">
-      <div class="ui segment">
-        <b>Inbox</b>
-        <p>Welcome to your inbox. Would you like to see more information?</p>
+    <div class="column no-margin-top">
+      <div class="ui red inverted attached small menu">
+        <div class="item">
+          <i class="map icon"></i><span id='map2-title'>Mapa de Lentidão (Segunda)</span>
+        </div>
+        <div class="right menu">
+          <div class="ui dropdown item">
+            Escolher dia da semana <i class="icon dropdown"></i>
+            <div class="menu">
+              <a id='dom_map2' class="item map2-weekday">Domingo</a>
+              <a id='seg_map2' class="item active map2-weekday">Segunda</a>
+              <a id='ter_map2' class="item map2-weekday">Terça</a>
+              <a id='qua_map2' class="item map2-weekday">Quarta</a>
+              <a id='qui_map2' class="item map2-weekday">Quinta</a>
+              <a id='sex_map2' class="item map2-weekday">Sexta</a>
+              <a id='sab_map2' class="item map2-weekday">Sábado</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui attached segment">
+        <div id="map2" style='width: 100%; height: 500px;'></div>
       </div>
     </div>
   </div>
   <div class="ui red inverted attached small menu">
-    <a id='map1-backward' class="item">
+    <a id='map-backward' class="item">
       <i class="backward icon"></i>
     </a>
-    <a id='#map1-play' class="active item map1-control">
+    <a id='map-play' class="active item maps-control">
       <i class="play icon"></i>
     </a>
-    <a id='#map1-stop' class="item map1-control">
+    <a id='map-stop' class="item maps-control">
       <i class="stop icon"></i>
     </a>
-    <a id='map1-forward' class="item">
+    <a id='map-forward' class="item">
       <i class="forward icon"></i>
     </a>
     <div class="right menu">
       <div class='item'>
-        <i class='time icon'></i> <span id='map1-time'></span>
+        <i class='time icon'></i> <span id='map-time'></span>
       </div>
     </div>
   </div>
