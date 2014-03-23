@@ -6,6 +6,19 @@ $('#camadas-button').click(function() {
   $('#camadas-menu').sidebar('toggle');
 });
 
+var amountSteps = {
+  map1: 2048
+}
+var animationDuration = {
+  map1: 120
+}
+var animationSpeed = {
+  map1: (amountSteps.map1 / animationDuration.map1)
+}
+var currentStep = {
+  map1: 0
+}
+
 var map = new google.maps.Map(document.getElementById('map'), {
     center: new google.maps.LatLng(-23.546523, -46.633407),
     zoom: 10,
@@ -23,17 +36,18 @@ map.setOptions({styles:map_style.google_maps_customization_style});
 var torqueLayer = new torque.GMapsTorqueLayer({
   provider: 'sql_api',
   user : 'ellery',
-  table : 'lentidao_sumario_semanal6',
+  table : 'lentidao_sumario_semanal',
   column : 'timestr',
   countby : 'max(extensao)',
   resolution: 1,
-  steps: 2048,
+  steps: amountSteps.map1,
   blendmode : 'lighter',
-  animationDuration: 120,
+  animationDuration: animationDuration.map1,
   map: map
 });
 
 torqueLayer.on('change:time', function(changes) {
+  currentStep.map1 = changes.step;
   if (changes.time.getDay) {
     var day = ''
     switch (changes.time.getDay()) {
@@ -71,6 +85,37 @@ $('.map1-control').click(function() {
     torqueLayer.toggle();
     $('.map1-control').toggleClass('active');
   }
+});
+
+var timeoutFlowButton;
+
+$('#map1-backward').mousedown(function(){
+    timeoutFlowButton = setInterval(function(){
+        torqueLayer.pause();
+        torqueLayer.setStep(currentStep.map1 - animationSpeed.map1)
+    }, 100);
+
+    return false;
+});
+
+$('#map1-forward').mousedown(function(){
+    timeoutFlowButton = setInterval(function(){
+        torqueLayer.pause();
+        torqueLayer.setStep(currentStep.map1 + animationSpeed.map1)
+    }, 100);
+
+    return false;
+});
+
+$(document).mouseup(function(){
+    if (timeoutFlowButton) {
+      if (! $('#map1-stop').hasClass('active')) {
+        torqueLayer.play();
+      }
+    }
+    clearInterval(timeoutFlowButton);
+    timeoutFlowButton = false;
+    return false;
 });
 
 var DEFAULT_CARTOCSS = [
