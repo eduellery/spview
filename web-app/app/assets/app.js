@@ -142,7 +142,7 @@ var FiltrarMapa = {
 torqueLayer.on('change:time', function(changes) {
   currentStep = changes.step;
   if (changes.time.getHours) {
-    $('#map-time').text(changes.time.getHours() + ':' + changes.time.getMinutes());
+    $('#map-time').text((changes.time.getHours() + 2) % 24 + ':' + changes.time.getMinutes());
   }
   torqueLayer2.setStep(currentStep);
 });
