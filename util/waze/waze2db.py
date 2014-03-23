@@ -48,6 +48,7 @@ if __name__ == '__main__':
             'line': jam['line'],
             'speed': jam['speed'],
           }
+          print(jam_id)
           collection.update({'_id': doc['_id']}, doc, True) #upsert
     
     time.sleep(60)
