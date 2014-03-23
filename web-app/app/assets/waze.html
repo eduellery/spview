@@ -72,8 +72,8 @@
   <script src="torque.js"></script>
   <script>
 
-    var amountSteps =  10;
-    var animationDuration = 30;
+    var amountSteps = 200;
+    var animationDuration = 20;
     var animationSpeed = (amountSteps / animationDuration);
     var currentStep = 0;
 
@@ -87,6 +87,14 @@
     ' [value > 250] { marker-fill: #FEB24C; }',
     ' [value > 500] { marker-fill: #FED976; }',
     ' [value > 1000] { marker-fill: #FFFFB2; }',
+    ' [frame-offset = 1] {  marker-width: 6; marker-fill-opacity: 0.9;}',
+    ' [frame-offset = 2] {  marker-width: 7; marker-fill-opacity: 0.8;}',
+    ' [frame-offset = 3] {  marker-width: 8; marker-fill-opacity: 0.7;}',
+    ' [frame-offset = 4] {  marker-width: 9; marker-fill-opacity: 0.6;}',
+    ' [frame-offset = 5] {  marker-width: 10; marker-fill-opacity: 0.5;}',
+    ' [frame-offset = 6] {  marker-width: 11; marker-fill-opacity: 0.4;}',
+    ' [frame-offset = 7] {  marker-width: 12; marker-fill-opacity: 0.3;}',
+    ' [frame-offset = 8] {  marker-width: 13; marker-fill-opacity: 0.2;}',
     '}'
     ].join('\n');
 
@@ -142,7 +150,7 @@
       steps: amountSteps,
       blendmode : 'lighter',
       animationDuration: animationDuration,
-      sql: "SELECT * FROM lentidao_sumario_semanal WHERE semana LIKE '0' AND timestr BETWEEN '2013-01-01 05:00:00' AND '2013-01-01 11:30:00'",
+      sql: "SELECT * FROM lentidao_sumario_semanal WHERE semana LIKE '6' AND timestr BETWEEN '2013-01-07 05:00:00' AND '2013-01-07 11:40:00'",
       cartocss: DEFAULT_CARTOCSS,
       map: map2
     });
