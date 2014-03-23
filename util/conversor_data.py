@@ -22,10 +22,11 @@ def converte(d, h):
 		return x
 	x += '/13T'
 	# Horas
-	if h >= 0 and h < 19:
+	if h >= 0 and h <= 19:
+                print(str(h/2))
 		x += '0'
 		x += str(h/2)
-	elif h >= 20 and h < 39:
+	elif h >= 20 and h <= 39:
 		x += str(h/2)
 	elif h >= 40 and h <= 47:
 		x += str(h/2)
@@ -38,4 +39,4 @@ def converte(d, h):
 		x += ':30:00Z'
 	return x
 
-print(converte(6,48));
+print(converte(1,39));
