@@ -8,19 +8,22 @@
   <!--[if lte IE 8]>
     <link rel="stylesheet" href="//libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.ie.css" />
   <![endif]-->
-  <link href="ocorrencias.css" rel="stylesheet" type="text/css">
-  <link href="app.css" rel="stylesheet" type="text/css"
+  <link href="app.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
-  <div class="ui inverted menu">
+ <nav class="ui inverted black block glued menu">
+    <h3 class="header item"><i class="building icon"></i> SPView</h3>
+    <a class="active item"><i class="truck icon"></i> Comparação Lentidão</a>
+    <a href='ocorrencias.html' class="item"><i class="fire icon"></i>Ocorrências</a>
     <a id='camadas-button' class="item">
       <i class="filter icon"></i>
     </a>
-  </div>
-  </nav>
+ </nav>
 
-  <div id='camadas-menu' class="ui very wide sidebar">
+  <div id="map" style='width: 100%; height: 600px;'></div>
+
+  <div id='camadas-menu' class="ui right floating sidebar very wide">
     <h2 class="ui block header">
       <i class="black dashboard icon"></i>
       <div class="content">
@@ -59,17 +62,6 @@
       </div>
     </div>
   </div>
-
-  <div class="ui red inverted attached small menu">
-  <a id='map-backward' class="item">
-      <i class="backward icon"></i>
-    </a>
-
-  </div>
-	<div class="ui attached segment">
-    	  <div id="map" style='width: 100%; height: 600px;'></div> 
-	</div>
-
 
   <script src='//code.jquery.com/jquery-2.1.0.min.js'></script>
   <script src='//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.13.0/javascript/semantic.min.js'></script>
