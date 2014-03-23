@@ -67,6 +67,11 @@ var map2 = new google.maps.Map(document.getElementById('map2'), {
     scaleControl: false,
     streetViewControl: false,
     overviewMapControl: false,
+    draggable: false,
+    zoomControl: false,
+    scrollwheel: false,
+    panControl: false,
+    disableDoubleClickZoom: true,
     styles: [ { "featureType": "landscape", "stylers": [ { "visibility": "off" } ] },{ "stylers": [ { "lightness": -16 }, { "saturation": 1 }, { "gamma": 0.84 } ] } ]
 });
 var torqueLayer2 = new torque.GMapsTorqueLayer({
@@ -85,6 +90,14 @@ var torqueLayer2 = new torque.GMapsTorqueLayer({
 });
 torqueLayer2.setMap(map2);
 torqueLayer2.play();
+
+var syncMap = function() {
+  map2.fitBounds(map.getBounds());
+  map2.setZoom(map.getZoom());
+}
+
+google.maps.event.addListener(map, 'center_changed', syncMap);
+google.maps.event.addListener(map, 'zoom_changed', syncMap);
 
 
 // Filtro por dia da semana
