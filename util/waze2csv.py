@@ -10,16 +10,16 @@ MONGO_COLLECTION = 'jams'
 conn = pymongo.Connection(MONGO_HOST, MONGO_PORT)
 collection = conn[MONGO_DB][MONGO_COLLECTION]
 
-filename = '/tmp/waze0840.csv'
+filename = '/tmp/waze1010.csv'
 with open(filename, 'w') as csvfile:
   csvwriter = csv.writer(csvfile, delimiter=',')
   csvwriter.writerow(('lat', 'lon', 'hora', 'extensao', 'timestr'))
 
   for i in range(44):
-    j = i+3
+    j = i+6
     brazil_timestr = '01/01/2013T%02d:%02d' % (i//2, 30*(i%2))
     mongo_timestr_from = '2014-03-23 %02d' % (j//2)
-    mongo_timestr_to = '2014-03-23 %02d' % ((j+1)//2)
+    mongo_timestr_to = '2014-03-23 %02d' % ((j+2)//2)
     print({'endtime': {'$gt': mongo_timestr_from, '$lt': mongo_timestr_to}})
     for doc in collection.find({'endtime': {'$gt': mongo_timestr_from, '$lt': mongo_timestr_to}}):
       mean_location = doc['line'][len(doc['line'])//2]
@@ -31,7 +31,7 @@ with open(filename, 'w') as csvfile:
           mean_location['x'],
           i,
           doc['length'],
-          brazil_timestr
+          '01/01/2013T%02d:%02d' % (int(doc['endtime'][-12:-10]) - 3, int(doc['endtime'][-9:-7])),
         ))
 
   csvfile.close()
