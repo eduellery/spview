@@ -1,5 +1,6 @@
 $('#camadas-menu').sidebar();
 $('.ui.checkbox').checkbox();
+$('.ui.dropdown').dropdown();
 
 $('#camadas-button').click(function() {
   $('#camadas-menu').sidebar('toggle');

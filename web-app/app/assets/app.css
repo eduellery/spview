@@ -3,3 +3,7 @@ html, body {
   font-size: 15px;
   font-family: 'Source Sans Pro', sans-serif !important;
 }
+
+.ui.inverted.menu .item .ui.checkbox > label {
+  color: #FFFFFF;
+}

@@ -12,12 +12,13 @@
 </head>
 <body>
 
-  <div class="ui inverted menu">
-    <a id='camadas-button' class="item">
-      <i class="reorder icon"></i>
-    </a>
-  </div>
-  </nav>
+  <h1 class="ui inverted black block header">
+    <i class="building icon"></i>
+    <div class="content">
+      SPView
+      <div class="sub header">Tchubiru tchubirau</div>
+    </div>
+  </h1>
 
   <div id='camadas-menu' class="ui styled sidebar">
     <h2 class="ui block header">
@@ -27,26 +28,39 @@
         <div class="sub header">Selecione as camadas que você deseja visualizar.</div>
       </div>
     </h2>    
-    <div class="ui fluid vertical menu">
-      <div class="item">
-        <i class="outline ambulance icon"></i>
-        <div class="ui toggle checkbox">
-          <input class='camadas-control' name="acidentes" type="checkbox">
-          <label>Acidentes</label>
+  </div>
+
+  <div class="ui two column grid">
+    <div class="column">
+      <div class="ui red inverted top attached small menu">
+        <div class="item">
+          <i class="map icon"></i> Mapa 1
+        </div>
+        <div class="item">
+          <div class="ui toggle checkbox">
+            <input class='camadas-control' name="acidentes" type="checkbox">
+            <label>Lentidão</label>
+          </div>
+        </div>
+        <div class="item">
+          <div class="ui toggle checkbox">
+            <input class='camadas-control' name="acidentes_letais" type="checkbox">
+            <label>Ocorrências</label>
+          </div>
         </div>
       </div>
-      <div class="item">
-        <i class="outline hospital icon"></i>
-        <div class="ui toggle checkbox">
-          <input class='camadas-control' name="acidentes_letais" type="checkbox">
-          <label>Acidentes Letais</label>
-        </div>
+      <div class="ui bottom attached segment">
+        <div id="map" style='width: 100%; height: 500px;'></div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="ui segment">
+        <b>Inbox</b>
+        <p>Welcome to your inbox. Would you like to see more information?</p>
       </div>
     </div>
   </div>
   
-  <div id="map" style='width: 400px; height: 600px;'></div>
-
   <script src='//code.jquery.com/jquery-2.1.0.min.js'></script>
   <script src='//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.13.0/javascript/semantic.min.js'></script>
   <script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
