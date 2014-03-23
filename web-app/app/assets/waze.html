@@ -15,8 +15,8 @@
   <nav class="ui inverted black block glued menu">
     <h3 class="header item"><i class="building icon"></i> SPView</h3>
     <a href='index.html' class="item"><i class="truck icon"></i> Comparação Lentidão</a>
-    <a href='ocorrencias.html' class="item"><i class="fire icon"></i>Ocorrências</a>
     <a href='waze.html' class="active item"><i class="users icon"></i>Comparação com dados do Waze</a>
+    <a href='ocorrencias.html' class="item"><i class="fire icon"></i>Ocorrências</a>
   </nav>
 
   <div class="ui two column grid attached borderless segment">
@@ -103,14 +103,14 @@
     var torqueLayer = new torque.GMapsTorqueLayer({
       provider: 'sql_api',
       user : 'joao12',
-      table : 'waze1010',
+      table : 'waze1140',
       column : 'timestr',
       countby : 'max(extensao)',
       resolution: 1,
       steps: amountSteps,
       blendmode : 'lighter',
       animationDuration: animationDuration,
-      sql: "SELECT * FROM waze1010",
+      sql: "SELECT * FROM waze1140",
       cartocss: DEFAULT_CARTOCSS,
       map: map
     });
@@ -142,7 +142,7 @@
       steps: amountSteps,
       blendmode : 'lighter',
       animationDuration: animationDuration,
-      sql: "SELECT * FROM lentidao_sumario_semanal WHERE semana LIKE '0' AND timestr BETWEEN '2013-01-01 05:00:00' AND '2013-01-01 09:30:00'",
+      sql: "SELECT * FROM lentidao_sumario_semanal WHERE semana LIKE '0' AND timestr BETWEEN '2013-01-01 05:00:00' AND '2013-01-01 11:30:00'",
       cartocss: DEFAULT_CARTOCSS,
       map: map2
     });
