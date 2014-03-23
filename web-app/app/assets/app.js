@@ -90,41 +90,41 @@ torqueLayer2.play();
 // Filtro por dia da semana
 $('.map1-weekday').click(function() {
   $('#map1-title').text('Mapa de Lentidão (' + $(this).text() + ')');
-  FiltrarMapa[$(this).attr('id')](torqueLayer);
+  FiltrarMapa[$(this).data('week')](torqueLayer);
 });
 
 $('.map2-weekday').click(function() {
   $('#map2-title').text('Mapa de Lentidão (' + $(this).text() + ')');
-  FiltrarMapa[$(this).attr('id')](torqueLayer2);
+  FiltrarMapa[$(this).data('week')](torqueLayer2);
 });
 
 
 var FiltrarMapa = {
-  dom_map1: function(layer) {
+  dom: function(layer) {
     layer.setSQL("SELECT * FROM lentidao_sumario_semanal WHERE semana LIKE '0'");
     return true;
   },
-  seg_map1: function(layer) {
+  seg: function(layer) {
     layer.setSQL("SELECT * FROM lentidao_sumario_semanal WHERE semana LIKE '1'");
     return true;
   },
-  ter_map1: function(layer) {
+  ter: function(layer) {
     layer.setSQL("SELECT * FROM lentidao_sumario_semanal WHERE semana LIKE '2'");
     return true;
   },
-  qua_map1: function(layer) {
+  qua: function(layer) {
     layer.setSQL("SELECT * FROM lentidao_sumario_semanal WHERE semana LIKE '3'");
     return true;
   },
-  qui_map1: function(layer) {
+  qui: function(layer) {
     layer.setSQL("SELECT * FROM lentidao_sumario_semanal WHERE semana LIKE '4'");
     return true;
   },
-  sex_map1: function(layer) {
+  sex: function(layer) {
     layer.setSQL("SELECT * FROM lentidao_sumario_semanal WHERE semana LIKE '5'");
     return true;
   },
-  sab_map1: function(layer) {
+  sab: function(layer) {
     layer.setSQL("SELECT * FROM lentidao_sumario_semanal WHERE semana LIKE '6'");
     return true;
   }
