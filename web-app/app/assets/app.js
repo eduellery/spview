@@ -27,10 +27,50 @@ var torqueLayer = new torque.GMapsTorqueLayer({
   column : 'timestr',
   countby : 'max(extensao)',
   resolution: 1,
-  steps: 1024,
+  steps: 2048,
   blendmode : 'lighter',
-  animationDuration: 60,
+  animationDuration: 120,
   map: map
+});
+
+torqueLayer.on('change:time', function(changes) {
+  if (changes.time.getDay) {
+    var day = ''
+    switch (changes.time.getDay()) {
+    case 2:
+      day = 'Domingo';
+      break;
+    case 3:
+      day = 'Segunda';
+      break;
+    case 4:
+      day = 'Terça';
+      break;
+    case 5:
+      day = 'Quarta';
+      break;
+    case 6:
+      day = 'Quinta';
+      break;
+    case 0:
+      day = 'Sexta';
+      break;
+    case 1:
+      day = 'Sábado';
+      break;
+    default:
+      day = 'Domingo';
+      break;
+    }
+    $('#map1-time').text(day + ' ' + changes.time.getHours() + ':' + changes.time.getMinutes());
+  }
+});
+
+$('.map1-control').click(function() {
+  if (! $(this).hasClass('active')) {
+    torqueLayer.toggle();
+    $('.map1-control').toggleClass('active');
+  }
 });
 
 var DEFAULT_CARTOCSS = [

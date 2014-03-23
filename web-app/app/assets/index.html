@@ -30,17 +30,32 @@
     </h2>    
   </div>
 
-  <div class="ui two column grid">
+  <div class="ui two column middle aligned relaxed grid basic segment">
     <div class="column">
-      <div class="ui red inverted top attached small menu">
+      <div class="ui red inverted attached small menu">
         <div class="item">
-          <i class="map icon"></i> Mapa 1
+          <i class="map icon"></i><span id='map1-title'>Mapa de Lentidão</span>
         </div>
-
       </div>
-      <div class="ui bottom attached segment">
+      <div class="ui attached segment">
         <div id="map" style='width: 100%; height: 500px;'></div>
       </div>
+      <div class="ui red inverted attached small menu">
+        <a class="active item map1-control">
+          <i class="play icon"></i>
+        </a>
+        <a class="item map1-control">
+          <i class="stop icon"></i>
+        </a>
+        <div class="right menu">
+          <div class='item'>
+            <i class='time icon'></i> <span id='map1-time'></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui vertical divider">
+      <i class="resize horizontal icon"></i>
     </div>
     <div class="column">
       <div class="ui segment">
