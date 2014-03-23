@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8"/>
+  <title>SPView</title>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.13.0/css/semantic.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="//libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" href="//libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.ie.css" />
+  <![endif]-->
+  <link href="ocorrencias.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <div class="ui inverted menu">
+    <a id='camadas-button' class="item">
+      <i class="reorder icon"></i>
+    </a>
+  </div>
+  </nav>
+
+  <div id='camadas-menu' class="ui styled sidebar">
+    <h2 class="ui block header">
+      <i class="black dashboard icon"></i>
+      <div class="content">
+        Camadas
+        <div class="sub header">Selecione as camadas que voce deseja visualizar.</div>
+      </div>
+    </h2>    
+    <div class="ui fluid vertical menu">
+      <div class="item">
+        <i class="outline ambulance icon"></i>
+        <div class="ui toggle checkbox">
+          <input class='camadas-control' name="sem" type="checkbox" checked>
+          <label>Acidente sem vitima</label>
+        </div>
+      </div>
+      <div class="item">
+        <i class="outline hospital icon"></i>
+        <div class="ui toggle checkbox">
+          <input class='camadas-control' name="com" type="checkbox" checked>
+          <label>Acidente com vitima</label>
+        </div>
+      </div>
+      <div class="item">
+        <i class="outline heart icon"></i>
+        <div class="ui toggle checkbox">
+          <input class='camadas-control' name="caminh" type="checkbox" checked>
+          <label>Caminhão imobilizado na via</label>
+        </div>
+      </div>
+      <div class="item">
+        <i class="outline sun icon"></i>
+        <div class="ui toggle checkbox">
+          <input class='camadas-control' name="moto" type="checkbox" checked>
+          <label>Auto, moto ou utilitario imobilizado na via</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="map" style='width: 400px; height: 600px;'></div>
+
+  <script src='//code.jquery.com/jquery-2.1.0.min.js'></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.13.0/javascript/semantic.min.js'></script>
+  <script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <script src="//libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
+  <script src='ocorrencias.js'></script>
+</body>
