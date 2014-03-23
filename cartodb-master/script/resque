@@ -1,2 +1,0 @@
-#!/bin/sh
-VVERBOSE=true QUEUE=* rake environment resque:work
