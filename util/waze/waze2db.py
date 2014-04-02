@@ -3,9 +3,9 @@ import requests
 import time
 
 
-def waze_fetch():
+def waze_fetch(left, right, bottom, top):
   """Download jams from Waze."""
-  url = 'https://www.waze.com/row-rtserver/web/GeoRSS?os=60&atof=false&format=JSON&ma=200&mj=100&mu=100&sc=216672&jmu=0&types=alerts%2Cusers%2Ctraffic&left=-47.002189636230460&right=-46.25182342529297&bottom=-23.704664042303435&top=-23.40404600012711&_=1395559611984'
+  url = 'https://www.waze.com/row-rtserver/web/GeoRSS?os=60&atof=false&format=JSON&ma=200&mj=100&mu=100&sc=216672&jmu=0&types=traffic&left=%s&right=%s&bottom=%s&top=%s&_=%s' % (left, right, bottom, top, str(int(time.time())))
   headers = {
     'Host': 'www.waze.com',
     'Referer': 'https://www.waze.com/livemap',
@@ -33,22 +33,26 @@ if __name__ == '__main__':
   collection.ensure_index('street')
   collection.ensure_index('endtime')
 
+  grid = [
+    ('-47.00218963623046', '-46.25182342529297', '-23.61254335865636', '-23.49622377880563'),
+  ]
 
   while True:
-    endtime, jams = waze_fetch()
-    if endtime and jams:
-      for jam in jams:
-        if 'street' in jam:
-          jam_id = '%s - %s' % (jam['street'], endtime)
-          doc = {
-            '_id': jam_id,
-            'endtime': endtime,
-            'street': jam['street'],
-            'length': jam['length'],
-            'line': jam['line'],
-            'speed': jam['speed'],
-          }
-          print(jam_id)
-          collection.update({'_id': doc['_id']}, doc, True) #upsert
-    
+    for coords in grid:
+      endtime, jams = waze_fetch(coords[0], coords[1], coords[2], coords[3])
+      if endtime and jams:
+        for jam in jams:
+          if 'street' in jam:
+            jam_id = '%s - %s' % (jam['street'], endtime)
+            doc = {
+              '_id': jam_id,
+              'endtime': endtime,
+              'street': jam['street'],
+              'length': jam['length'],
+              'line': jam['line'],
+              'speed': jam['speed'],
+            }
+            print(jam_id)
+            collection.update({'_id': doc['_id']}, doc, True) #upsert
+
     time.sleep(60)
