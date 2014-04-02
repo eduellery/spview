@@ -15,3 +15,8 @@ html, body {
 .no-margin-top {
 	margin-top: 0px !important;
 }
+
+#map-time, #map-play > i, #map-stop  > i, #map-backward  > i, #map-forward  > i,
+i.time.icon {
+  font-size: 2em;
+}

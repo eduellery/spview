@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8"/>
+  <title>SPView</title>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.13.0/css/semantic.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="//libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" href="//libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.ie.css" />
+  <![endif]-->
+  <link href="app.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <nav class="ui inverted black block glued menu">
+    <h3 class="header item"><i class="building icon"></i> SPView</h3>
+    <a href='index.html' class="item"><i class="truck icon"></i> Comparação Lentidão</a>
+    <a href='waze.html' class="item"><i class="users icon"></i>Comparação com dados do Waze</a>
+    <a href='lentidao.html' class="active item"><i class="lab icon"></i>Lentidão Estendida</a>
+    <a href='ocorrencias.html' class="item"><i class="fire icon"></i>Ocorrências</a>
+  </nav>
+
+  <div class="ui attached borderless segment">
+    <div class="column">
+      <div class="ui red inverted attached small menu">
+        <div class="item">
+          <i class="map icon"></i><span id='map1-title'>Lentidaão do mês de Junho</span>
+        </div>
+      </div>
+      <div class="ui attached segment">
+        <div id="map" style='width: 100%; height: 500px;'></div>
+      </div>
+    </div>
+  </div>
+  <div class="ui red inverted attached small menu">
+    <a id='map-backward' class="item">
+      <i class="backward icon"></i>
+    </a>
+    <a id='map-play' class="active item maps-control">
+      <i class="play icon"></i>
+    </a>
+    <a id='map-stop' class="item maps-control">
+      <i class="stop icon"></i>
+    </a>
+    <a id='map-forward' class="item">
+      <i class="forward icon"></i>
+    </a>
+    <div class="right menu">
+      <div class='item'>
+        <i class='time icon'></i> <span id='map-time'></span>
+      </div>
+    </div>
+  </div>
+  
+  <script src='//code.jquery.com/jquery-2.1.0.min.js'></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.13.0/javascript/semantic.min.js'></script>
+  <script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <script src="underscore.js"></script>
+  <script src="carto.js"></script>
+  <script src="torque.js"></script>
+  <script>
+    var amountSteps = 50;
+    var animationDuration = 10;
+    var animationSpeed = (amountSteps / animationDuration);
+    var currentStep = 0;
+
+    var DEFAULT_CARTOCSS = [
+    '#layer {',
+    " marker-width: 5; ",
+    ' marker-fill: ; #B10026;',
+    ' [value > 10] { marker-fill: #E31A1C; }',
+    ' [value > 20] { marker-fill: #FC4E2A; }',
+    ' [value > 30] { marker-fill: #FD8D3C; }',
+    ' [value > 40] { marker-fill: #FEB24C; }',
+    ' [value > 50] { marker-fill: #FED976; }',
+    ' [value > 60] { marker-fill: #FFFFB2; }',
+    ' [frame-offset = 1] {  marker-width: 6; marker-fill-opacity: 0.9;}',
+    ' [frame-offset = 2] {  marker-width: 7; marker-fill-opacity: 0.8;}',
+    ' [frame-offset = 3] {  marker-width: 8; marker-fill-opacity: 0.7;}',
+    ' [frame-offset = 4] {  marker-width: 9; marker-fill-opacity: 0.6;}',
+    ' [frame-offset = 5] {  marker-width: 10; marker-fill-opacity: 0.5;}',
+    ' [frame-offset = 6] {  marker-width: 11; marker-fill-opacity: 0.4;}',
+    ' [frame-offset = 7] {  marker-width: 12; marker-fill-opacity: 0.3;}',
+    ' [frame-offset = 8] {  marker-width: 13; marker-fill-opacity: 0.2;}',
+    '}'
+    ].join('\n');
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+        center: new google.maps.LatLng(-23.546523, -46.633407),
+        zoom: 10,
+        mapTypeControl:false,
+        minZoom:1,
+        scaleControl: false,
+        streetViewControl: false,
+        overviewMapControl: false,
+        styles: [ { "featureType": "landscape", "stylers": [ { "visibility": "off" } ] },{ "stylers": [ { "lightness": -16 }, { "saturation": 1 }, { "gamma": 0.84 } ] } ]
+    });
+    var torqueLayer = new torque.GMapsTorqueLayer({
+      provider: 'sql_api',
+      user : 'spview',
+      table : 'trafego_final',
+      column : 'data',
+      countby : 'count(cartodb_id)',
+      resolution: 1,
+      steps: amountSteps,
+      blendmode : 'lighter',
+      animationDuration: animationDuration,
+      sql: "SELECT * FROM trafego_final",
+      cartocss: DEFAULT_CARTOCSS,
+      map: map
+    });
+    torqueLayer.setMap(map);
+    torqueLayer.play();
+
+    torqueLayer.on('change:time', function(changes) {
+      currentStep = changes.step;
+      if (changes.time.getHours) {
+        $('#map-time').text( changes.time.getDate() + ' de Junho de 2013 - ' + ('0' + ((changes.time.getHours() + 2) % 24)).slice(-2) + ':' + ('0' + changes.time.getMinutes()).slice(-2));
+      }
+    });
+
+    var timeoutFlowButton;
+
+    $('#map-backward').mousedown(function(){
+        timeoutFlowButton = setInterval(function(){
+            torqueLayer.pause();
+            torqueLayer.setStep(currentStep - animationSpeed);
+        }, 100);
+
+        return false;
+    });
+
+    $('#map-forward').mousedown(function(){
+        timeoutFlowButton = setInterval(function(){
+            torqueLayer.pause();
+            torqueLayer.setStep(currentStep + animationSpeed);
+        }, 100);
+
+        return false;
+    });
+
+    $(document).mouseup(function(){
+        if (timeoutFlowButton) {
+          if (! $('#map-stop').hasClass('active')) {
+            torqueLayer.play();
+          }
+        }
+        clearInterval(timeoutFlowButton);
+        timeoutFlowButton = false;
+        return false;
+    });
+
+    $('.maps-control').click(function() {
+      if (! $(this).hasClass('active')) {
+        torqueLayer.toggle();
+        $('.maps-control').toggleClass('active');
+      }
+    });
+
+  </script>
+</body>
